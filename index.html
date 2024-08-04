@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Jairo Bonilla Developer</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		p {
+			text-align: justify;
+		}
+		nav > ul {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 0;
+		}
+		nav > ul > li {
+			margin: 0 10px;
+		}
+		nav > ul > li > a {
+			text-decoration: none;
+			color: #333;
+		}
+		#header {
+			background-color: #f4f4f4;
+			padding: 10px 0;
+			display: flex;
+			top: 0;
+			max-height: 50px;
+			width: 100%;
+			justify-content: center;
+			position: fixed;
+		}
+		.home {
+			margin-top: 50px;
+			padding-top: 20px;
+		}
+		#footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 10px 0;
+			display: flex;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+		form > label {
+			margin-top: 10px;
+		}
+		form > input, form > textarea {
+			margin-top: 5px;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		form > button {
+			margin-top: 10px;
+			padding: 5px;
+			border: 1px solid #333;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+		}
+		#projects > ul {
+			list-style: none;
+		}
+		#projects > ul > li {
+			margin-top: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		#projects > ul > li > h2 {
+			margin: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<section id="header">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section id="home">
+		<div class="container home">
+			<h1>Full Stack Developer</h1>
+			<p>
+				Hello, I'm Jairo Bonilla, a Full Stack Developer with a passion for building web applications. I have
+				experience working with JavaScript, React, Node.js, PhP, Angular and MongoDB, MySQL, PostgreSQL and DynamoDB. I'm constantly learning new
+				technologies and frameworks to improve my skills and build better applications.
+			</p>
+			<p>
+				I'm currently looking for new opportunities to work on exciting projects and collaborate with other
+				developers. If you're interested in working with me, feel free to contact me.
+			</p>
+		</div>
+	</section>
+	<section id="about">
+		<div class="container">
+			<h1>About Me</h1>
+			<p>
+				I'm a Full Stack Developer with a passion for building web applications. I have experience working with
+				JavaScript, React, Node.js, Express, and MongoDB. I'm constantly learning new technologies and frameworks
+				to improve my skills and build better applications.
+			</p>
+			<p>
+				I have a Bachelor's degree in Computer Science from the University of California, Berkeley. I've worked
+				on a variety of projects, including e-commerce websites, social media platforms, and content management
+				systems. I'm always looking for new opportunities to work on exciting projects and collaborate with other
+				developers.
+			</p>
+		</div>
+	</section>
+	<section id="projects">
+		<div class="container">
+			<h1>Projects</h1>
+			<p>
+				Here are some of the projects I've worked on:
+			</p>
+			<ul>
+				<li>
+					<h2>Online Store</h2>
+					<p>
+						An e-commerce website built with React, Node.js, Express, and MongoDB. Users can browse products,
+						add them to their cart, and checkout using a credit card.
+					</p>
+				</li>
+				<li>
+					<h2>Social Media Platform</h2>
+					<p>
+						A social media platform built with React, Node.js, Express, and MongoDB. Users can create posts,
+						like and comment on other posts, and follow other users.
+					</p>
+				</li>
+				<li>
+					<h2>Content Management System</h2>
+					<p>
+						A content management system built with React, Node.js, Express, and MongoDB. Users can create,
+						edit, and delete articles, images, and videos.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<h1>Contact Me</h1>
+			<p>
+				If you're interested in working with me, feel free to contact me using the form below. I'll get back to
+				you as soon as possible.
+			</p>
+			<form action="submit.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="container">
+			<p>&copy; 2024 Jairo Bonilla. All rights reserved.</p>
+		</div>
+	</section>
+
+</body>
+
+</html>
