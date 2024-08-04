@@ -9,17 +9,14 @@
 			margin: 0;
 			padding: 0;
 		}
-
 		.container {
 			max-width: 800px;
 			margin: 0 auto;
 			padding: 20px;
 		}
-
 		h1 {
 			text-align: center;
 		}
-
 		p {
 			text-align: justify;
 		}
@@ -91,6 +88,22 @@
 		#projects > ul > li > h2 {
 			margin: 0;
 		}
+		section {
+			padding: 30px 0;
+		}
+		section:nth-child(odd) {
+			background-color: #f4f4f4;
+		}
+		section:nth-child(even) {
+			background-color: #fff;
+		}
+		#home {
+			background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+		}
+		
 
 	</style>
 </head>
@@ -101,6 +114,7 @@
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -136,6 +150,28 @@
 			</p>
 		</div>
 	</section>
+	<section id="skills">
+		<div class="container">
+			<h1>Skills</h1>
+			<p>
+				Here are some of the skills I have:
+			</p>
+			<ul>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>Express</li>
+				<li>MongoDB</li>
+				<li>MySQL</li>
+				<li>PostgreSQL</li>
+				<li>AWS (Lambda, API Gateway, CloudWatch, DynamoDB)</li>
+				<li>CSS</li>
+				<li>PHP</li>
+				<li>Angular</li>
+				<li>Python</li>
+			</ul>
+		</div>
+	</section>
 	<section id="projects">
 		<div class="container">
 			<h1>Projects</h1>
@@ -146,22 +182,20 @@
 				<li>
 					<h2>Online Store</h2>
 					<p>
-						An e-commerce website built with React, Node.js, Express, and MongoDB. Users can browse products,
+						An e-commerce website built with WordPress and Woocommerce. Users can browse products,
 						add them to their cart, and checkout using a credit card.
 					</p>
 				</li>
 				<li>
-					<h2>Social Media Platform</h2>
+					<h2>Web Application for Farms</h2>
 					<p>
-						A social media platform built with React, Node.js, Express, and MongoDB. Users can create posts,
-						like and comment on other posts, and follow other users.
+						A web application that allows to users to manage their farms, including tracking inventory, chemicals application to plantation and	monitoring their conditions.
 					</p>
 				</li>
 				<li>
-					<h2>Content Management System</h2>
+					<h2>Web Application for BAC</h2>
 					<p>
-						A content management system built with React, Node.js, Express, and MongoDB. Users can create,
-						edit, and delete articles, images, and videos.
+						A web application for schedule appointments for BAC. Users can schedule appointments, print their ticket and go to the bank.
 					</p>
 				</li>
 			</ul>
