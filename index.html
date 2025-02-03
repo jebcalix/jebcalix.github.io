@@ -3,36 +3,46 @@
 
 <head>
 	<title>Jairo Bonilla Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
+
 		.container {
 			max-width: 800px;
 			margin: 0 auto;
 			padding: 20px;
 		}
+
 		h1 {
 			text-align: center;
 		}
+
 		p {
 			text-align: justify;
 		}
-		nav > ul {
+
+		nav>ul {
 			display: flex;
 			justify-content: center;
 			list-style: none;
 			padding: 0;
 		}
-		nav > ul > li {
+
+		nav>ul>li {
 			margin: 0 10px;
 		}
-		nav > ul > li > a {
+
+		nav>ul>li>a {
 			text-decoration: none;
 			color: #333;
 		}
+
 		#header {
 			background-color: #f4f4f4;
 			padding: 10px 0;
@@ -43,10 +53,12 @@
 			justify-content: center;
 			position: fixed;
 		}
+
 		.home {
 			margin-top: 50px;
 			padding-top: 20px;
 		}
+
 		#footer {
 			background-color: #333;
 			color: #fff;
@@ -54,20 +66,25 @@
 			padding: 10px 0;
 			display: flex;
 		}
+
 		form {
 			display: flex;
 			flex-direction: column;
 		}
-		form > label {
+
+		form>label {
 			margin-top: 10px;
 		}
-		form > input, form > textarea {
+
+		form>input,
+		form>textarea {
 			margin-top: 5px;
 			padding: 5px;
 			border: 1px solid #ccc;
 			border-radius: 5px;
 		}
-		form > button {
+
+		form>button {
 			margin-top: 10px;
 			padding: 5px;
 			border: 1px solid #333;
@@ -76,41 +93,46 @@
 			color: #fff;
 			cursor: pointer;
 		}
-		#projects > ul {
+
+		#projects>ul {
 			list-style: none;
 		}
-		#projects > ul > li {
+
+		#projects>ul>li {
 			margin-top: 20px;
 			padding: 10px;
 			border: 1px solid #ccc;
 			border-radius: 5px;
 		}
-		#projects > ul > li > h2 {
+
+		#projects>ul>li>h2 {
 			margin: 0;
 		}
+
 		section {
 			padding: 30px 0;
 		}
+
 		section:nth-child(odd) {
 			background-color: #f4f4f4;
 		}
+
 		section:nth-child(even) {
 			background-color: #fff;
 		}
+
 		#home {
 			background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
 			background-size: cover;
 			background-position: center;
 			color: #fff;
 		}
-		
-
 	</style>
 </head>
 
 <body>
 	<section id="header">
-		<nav>
+		<nav class="flex justify-center">
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -121,11 +143,12 @@
 		</nav>
 	</section>
 	<section id="home">
-		<div class="container home">
-			<h1>Full Stack Developer</h1>
+		<div class="container home flex flex-col gap-2 p-8">
+			<h1 class="text-lg font-semibold text-black">Full Stack Developer</h1>
 			<p>
 				Hello, I'm Jairo Bonilla, a Full Stack Developer with a passion for building web applications. I have
-				experience working with JavaScript, React, Node.js, PhP, Angular and MongoDB, MySQL, PostgreSQL and DynamoDB. I'm constantly learning new
+				experience working with JavaScript, React, Node.js, PhP, Angular and MongoDB, MySQL, PostgreSQL and
+				DynamoDB. I'm constantly learning new
 				technologies and frameworks to improve my skills and build better applications.
 			</p>
 			<p>
@@ -135,24 +158,26 @@
 		</div>
 	</section>
 	<section id="about">
-		<div class="container">
-			<h1>About Me</h1>
+		<div class="container home flex flex-col gap-2 p-8">
+			<h1 class="text-lg font-semibold text-black">About Me</h1>
 			<p>
 				I'm a Full Stack Developer with a passion for building web applications. I have experience working with
-				JavaScript, React, Node.js, Express, and MongoDB. I'm constantly learning new technologies and frameworks
+				JavaScript, React, Node.js, Express, and MongoDB. I'm constantly learning new technologies and
+				frameworks
 				to improve my skills and build better applications.
 			</p>
 			<p>
 				I have a Bachelor's degree in Computer Science from the University of California, Berkeley. I've worked
 				on a variety of projects, including e-commerce websites, social media platforms, and content management
-				systems. I'm always looking for new opportunities to work on exciting projects and collaborate with other
+				systems. I'm always looking for new opportunities to work on exciting projects and collaborate with
+				other
 				developers.
 			</p>
 		</div>
 	</section>
 	<section id="skills">
-		<div class="container">
-			<h1>Skills</h1>
+		<div class="container home flex flex-col gap-2 p-8">
+			<h1 class="text-lg font-semibold text-black">Skills</h1>
 			<p>
 				Here are some of the skills I have:
 			</p>
@@ -173,8 +198,8 @@
 		</div>
 	</section>
 	<section id="projects">
-		<div class="container">
-			<h1>Projects</h1>
+		<div class="container home flex flex-col gap-2 p-8">
+			<h1 class="text-lg font-semibold text-black">Projects</h1>
 			<p>
 				Here are some of the projects I've worked on:
 			</p>
@@ -183,7 +208,8 @@
 					<h2>E-commerce Payment Gateway</h2>
 					<p>
 						A payment gateway that allows users to make payments using a credit card.
-						This was developed using React, PostgreSQL, Node.JS and AWS (Lambda, DynamoDB, API Gateway, etc).
+						This was developed using React, PostgreSQL, Node.JS and AWS (Lambda, DynamoDB, API Gateway,
+						etc).
 				</li>
 				<li>
 					<h2>Online Store</h2>
@@ -195,22 +221,25 @@
 				<li>
 					<h2>Web Application for Farms</h2>
 					<p>
-						A web application that allows to users to manage their farms, including tracking inventory, chemicals application to plantation and	monitoring their conditions.
+						A web application that allows to users to manage their farms, including tracking inventory,
+						chemicals application to plantation and monitoring their conditions.
 						This was developed using PhP, MySQL and JavaScript.
 					</p>
 				</li>
 				<li>
 					<h2>Web Application for BAC</h2>
 					<p>
-						A web application for schedule appointments for BAC. Users can schedule appointments, print their ticket and go to the bank.
+						A web application for schedule appointments for BAC. Users can schedule appointments, print
+						their ticket and go to the bank.
 						This was developed using .NET and SQL Server.
 					</p>
 				</li>
-				
+
 				<li>
 					<h2>ERP & APS</h2>
 					<p>
-						An ERP & APS system that allows to users to manage their companies, including their users, planning meetings, etc.
+						An ERP & APS system that allows to users to manage their companies, including their users,
+						planning meetings, etc.
 						This was developed using PhP, MySQL and JavaScript.
 					</p>
 				</li>
@@ -218,8 +247,8 @@
 		</div>
 	</section>
 	<section id="contact">
-		<div class="container">
-			<h1>Contact Me</h1>
+		<div class="container home flex flex-col gap-2 p-8">
+			<h1 class="text-lg font-semibold text-black">Contact Me</h1>
 			<p>
 				If you're interested in working with me, feel free to contact me using the form below. I'll get back to
 				you as soon as possible.
@@ -236,8 +265,8 @@
 		</div>
 	</section>
 	<section id="footer">
-		<div class="container">
-			<p>&copy; 2024 Jairo Bonilla. All rights reserved.</p>
+		<div class="container home flex flex-col gap-2 p-8">
+			<p>&copy; 2025 Jairo Bonilla. All rights reserved.</p>
 		</div>
 	</section>
 
