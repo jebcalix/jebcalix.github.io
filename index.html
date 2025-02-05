@@ -5,112 +5,9 @@
 	<title>Jairo Bonilla Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="./styles.css" />
 
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-		}
-
-		nav>ul {
-			display: flex;
-			justify-content: center;
-			list-style: none;
-			padding: 0;
-		}
-
-		nav>ul>li {
-			margin: 0 10px;
-		}
-
-		nav>ul>li>a {
-			text-decoration: none;
-			color: #333;
-		}
-
-		#header {
-			padding: 10px 0;
-			display: flex;
-			top: 0;
-			max-height: 50px;
-			width: 100%;
-			justify-content: center;
-			position: fixed;
-		}
-
-		.home {
-			margin-top: 50px;
-			padding-top: 20px;
-		}
-
-		#footer {
-			background-color: #333;
-			color: #fff;
-			text-align: center;
-			padding: 10px 0;
-			display: flex;
-		}
-
-		form {
-			display: flex;
-			flex-direction: column;
-		}
-
-		form>label {
-			margin-top: 10px;
-		}
-
-		form>input,
-		form>textarea {
-			margin-top: 5px;
-			padding: 5px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			resize: none;
-		}
-
-
-		#projects>ul {
-			list-style: none;
-		}
-
-		#projects>ul>li {
-			margin-top: 20px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-		}
-
-		#projects>ul>li>h2 {
-			margin: 0;
-		}
-
-		section {
-			padding: 30px 0;
-		}
-
-		section:nth-child(odd) {
-			background-color: #f4f4f4;
-		}
-
-		section:nth-child(even) {
-			background-color: #fff;
-		}
-
-		#home {
-			background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
-			background-size: cover;
-			background-position: center;
-			color: #fff;
-		}
-	</style>
 </head>
 
 <body>
@@ -123,7 +20,7 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
-	<section id="home" class="h-screen justify-center items-center flex bg-cover bg-center bg-no-repeat">
+	<section id="home" class="h-screen justify-center items-center flex bg-linear-0 from-cyan-500 to-blue-500">
 		<div class="container home flex flex-col gap-2 p-8">
 			<h1 class="text-lg font-semibold text-black text-center">Full Stack Developer</h1>
 			<p class="text-justify">
@@ -138,7 +35,7 @@
 			</p>
 		</div>
 	</section>
-	<section id="about" class="h-screen justify-center items-center flex bg-cover bg-center bg-no-repeat">
+	<section id="about" class="h-screen justify-center items-center flex bg-linear-0 from-blue-500 to-cyan-500">
 		<div class="container home flex flex-col gap-2 p-8">
 			<h1 class="text-lg font-semibold text-black text-center">About Me</h1>
 			<p class="text-justify">
@@ -162,168 +59,140 @@
 			<ul>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
-						<p class="ml-3 mr-2">
-							JavaScript</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 90%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">JavaScript</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
-						<p class="ml-3 mr-2">React.JS</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 70%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">React.JS</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 70%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
-
-						<p class="ml-3 mr-2">Node.JS</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 80%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">Node.JS</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 80%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">Express.JS</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 50%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">Express.JS</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">MongoDB</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 60%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">MongoDB</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 60%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">MySQL</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 90%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">MySQL</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">PostgreSQL</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 90%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">PostgreSQL</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">AWS (Lambda, API Gateway, CloudWatch, DynamoDB)</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 75%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">AWS (Lambda, API Gateway, CloudWatch,
+							DynamoDB)</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 75%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">CSS</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 90%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">CSS</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">PHP</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 90%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">PHP</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">Angular</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 60%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">Angular</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">Python</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 50%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">Python</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
 						</div>
 					</div>
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">C# .Net</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 60%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">C# .Net</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
 						</div>
 					</div>
+
 				</li>
 
 				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-6">
 
-						<p class="ml-3 mr-2">Flutter/Dart</p>
-					</div>
-					<div class="col-span-6">
-						<div class='w-full  bg-gray-100 rounded-3xl h-2.5 '>
-							<div class='bg-indigo-600 h-2.5 rounded-3xl' style='width: 40%'></div>
+					<div class="col-span-12">
+						<div class="mb-1 text-base font-medium dark:text-white">Flutter/Dart</div>
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 40%"></div>
 						</div>
 					</div>
 				</li>
