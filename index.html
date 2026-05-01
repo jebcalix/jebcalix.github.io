@@ -1,281 +1,716 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>Jairo Bonilla Developer</title>
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="preconnect" href="https://unpkg.com" />
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 	<link rel="stylesheet" href="./styles.css" />
 
 </head>
 
 <body>
-	<nav class="flex justify-center bg-black text-white top fixed w-full p-4">
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	<section id="home" class="h-screen justify-center items-center flex bg-linear-0 from-cyan-500 to-blue-500">
-		<div class="container home flex flex-col gap-2 p-8">
-			<h1
-				class="text-lg font-semibold text-black text-center animate__animated animate__heartBeat animate__delay-2s animate__infinite">
-				Full Stack Developer</h1>
-			<img class="mx-auto flex flex-center size-50 rounded-full" src="./images/1612741342.jpg"
-				alt="Jairo Bonilla" />
-			<h1
-				class="text-lg font-semibold text-black text-center animate__animated animate__heartBeat animate__delay-2s animate__infinite">
-				Jairo Bonilla</h1>
-			<div class="flex-center columns-2 mt-5"><a class="flex col-1" href="https://github.com/jebcalix"
-					target="_blank"><img class="size-8 mx-auto rounded-full" alt="github"
-						src="./images/github.svg" /></a>
-				<a class="flex col-1" href="https://www.linkedin.com/in/jebcalix/" target="_blank"><img
-						class="size-8 mx-auto rounded-full" alt="github" src="./images/linkedin.svg" /></a>
+	<a href="#main"
+		class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-xl focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900 focus:shadow-lg">
+		Skip to content
+	</a>
+
+	<div
+		class="min-h-screen bg-slate-950 text-slate-100 selection:bg-violet-500/30 selection:text-white [color-scheme:dark]">
+		<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+			<div
+				class="absolute -top-40 left-[-20rem] h-[34rem] w-[34rem] rounded-full bg-violet-500/25 blur-3xl">
+			</div>
+			<div
+				class="absolute top-[-12rem] right-[-18rem] h-[30rem] w-[30rem] rounded-full bg-sky-500/20 blur-3xl">
 			</div>
 		</div>
-	</section>
-	<section id="about" class="h-screen justify-center items-center flex bg-linear-0 from-blue-500 to-cyan-500">
-		<div class="container home flex flex-col gap-2 p-8">
-			<h1 class="text-lg font-semibold text-black text-center">About Me</h1>
-			<p class="text-justify">
-				I'm a Full Stack Developer with a passion for building web applications. I have experience working with
-				JavaScript, React.js, Node.js, PhP, Python and C#, AWS (Lambda, S3, EC2, Cloudwatch, DynamoDB) and
-				MySQL, PostgreSQL, SQL Server and MongoDB. I'm constantly learning new technologies and frameworks to
-				improve my kills and build better applications.
-			</p>
-			<p class="text-justify">
-				I have a Bachelor's degree in Computer Science from the Catholic University of Honduras. I've worked on
-				a variety of projects, including e-commerce websites, social media platforms, and content management
-				systems. I'm always looking for new opportunities to work on exciting projects and collaborate with
-				other developers.
-			</p>
-		</div>
-	</section>
-	<section id="skills" class="h-screen justify-center items-center flex bg-cover bg-center bg-no-repeat">
-		<div class="container home flex flex-col gap-2 p-8">
-			<h1 class="text-lg font-semibold text-black text-center mb-2">Skills</h1>
-			<ul>
 
-				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">JavaScript</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
-						</div>
+		<header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur supports-[backdrop-filter]:bg-slate-950/50">
+			<div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:px-6">
+				<a href="#home" class="flex items-center gap-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-400/60">
+					<span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/10">
+						<span class="text-sm font-bold">JB</span>
+					</span>
+					<div class="hidden sm:block">
+						<div class="text-sm font-semibold leading-tight" data-i18n="nav.name">Jairo Bonilla</div>
+						<div class="text-xs text-slate-300" data-i18n="nav.role">Full‑Stack Developer</div>
 					</div>
-				</li>
+				</a>
 
-				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">React.JS</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 70%"></div>
-						</div>
-					</div>
-				</li>
+				<nav class="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
+					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						href="#about" data-i18n="nav.about">About</a>
+					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						href="#projects" data-i18n="nav.projects">Projects</a>
+					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						href="#skills" data-i18n="nav.skills">Skills</a>
+					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						href="#experience" data-i18n="nav.experience">Experience</a>
+					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						href="#contact" data-i18n="nav.contact">Contact</a>
+				</nav>
 
-				<li class="flex items-center grid grid-cols-12">
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">Node.JS</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 80%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">Express.JS</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">MongoDB</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 60%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">MySQL</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">PostgreSQL</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">AWS (Lambda, API Gateway, CloudWatch,
-							DynamoDB)</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 75%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">CSS</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">PHP</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 90%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">Angular</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">Python</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
-						</div>
-					</div>
-				</li>
-
-				<li class="flex items-center grid grid-cols-12">
-
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">C# .Net</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 50%"></div>
-						</div>
+				<div class="flex items-center gap-2">
+					<div class="hidden items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1 md:flex"
+						role="group" aria-label="Language selector">
+						<button id="lang-es" type="button"
+							class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							aria-pressed="false">ES</button>
+						<button id="lang-en" type="button"
+							class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							aria-pressed="true">EN</button>
 					</div>
 
-				</li>
+					<button id="mobileMenuBtn" type="button"
+						class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-slate-100 shadow-sm hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60 md:hidden"
+						aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+							stroke="currentColor" class="h-5 w-5">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					</button>
+				</div>
+			</div>
 
-				<li class="flex items-center grid grid-cols-12">
+			<div id="mobileMenu" class="hidden border-t border-white/10 md:hidden">
+				<div class="mx-auto max-w-6xl px-4 py-3">
+					<div class="flex flex-col gap-1">
+						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							href="#about" data-i18n="nav.about">About</a>
+						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							href="#projects" data-i18n="nav.projects">Projects</a>
+						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							href="#skills" data-i18n="nav.skills">Skills</a>
+						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							href="#experience" data-i18n="nav.experience">Experience</a>
+						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							href="#contact" data-i18n="nav.contact">Contact</a>
+					</div>
 
-					<div class="col-span-12">
-						<div class="mb-1 text-base font-medium dark:text-white">Flutter/Dart</div>
-						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-							<div class="bg-indigo-600 h-2.5 rounded-3xl" style="width: 40%"></div>
+					<div class="mt-3 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-2">
+						<div class="text-xs text-slate-300" data-i18n="nav.language">Language</div>
+						<div class="flex items-center gap-1" role="group" aria-label="Language selector (mobile)">
+							<button id="lang-es-mobile" type="button"
+								class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+								aria-pressed="false">ES</button>
+							<button id="lang-en-mobile" type="button"
+								class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+								aria-pressed="true">EN</button>
 						</div>
 					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<section id="projects" class="h-screen justify-center items-center flex bg-cover bg-center bg-no-repeat">
-		<div class="container home flex flex-col gap-2 p-8">
-			<h1 class="text-lg font-semibold text-black text-center">Projects</h1>
-			<ul class="flex flex-col gap-2 list-disc">
-				<li>
-					<h2 class="text-white font-bold">E-commerce Payment Gateway</h2>
-					<p>
-						A payment gateway that allows users to make payments using a credit card.
-						This was developed using React, PostgreSQL, Node.JS and AWS (Lambda, DynamoDB, API Gateway,
-						etc).
-				</li>
-				<li>
-					<h2 class="text-white font-bold">Online Store</h2>
-					<p>
-						An e-commerce website built with WordPress and Woocommerce. Users can browse products,
-						add to shopping cart, and checkout using a credit card.
+				</div>
+			</div>
+		</header>
+
+		<main id="main" class="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
+			<section id="home" class="grid items-center gap-10 md:grid-cols-12 md:gap-8">
+				<div class="md:col-span-7">
+					<div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">
+						<span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+						<span data-i18n="hero.badge">Available for freelance & remote</span>
+					</div>
+
+					<h1 class="mt-5 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
+						<span data-i18n="hero.h1a">Full‑stack engineer</span>
+						<span class="text-slate-300" data-i18n="hero.h1b">building web & mobile products</span>
+					</h1>
+
+					<p class="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-slate-200 md:text-lg"
+						data-i18n="hero.summary">
+						I build reliable backends with Node.js, ship Flutter apps, and deploy to AWS with observability and performance in mind.
 					</p>
-				</li>
-				<li>
-					<h2 class="text-white font-bold">Web Application for Farms</h2>
-					<p>
-						A web application that allows users to manage their farms, including tracking inventory,
-						chemicals application to plantation and monitoring their conditions.
-						This was developed using PhP, MySQL and JavaScript.
-					</p>
-				</li>
-				<li>
-					<h2 class="text-white font-bold">Web Application for BAC</h2>
-					<p>
-						A web application for schedule appointments for BAC. Users can schedule appointments, print
-						their ticket and go to the bank.
-						This was developed using .NET and SQL Server.
-					</p>
-				</li>
 
-				<li>
-					<h2 class="text-white font-bold">ERP & APS</h2>
-					<p>
-						An ERP & APS system that allows to users to manage their companies, including their users,
-						planning meetings, etc.
-						This was developed using PhP, MySQL and JavaScript.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<section id="contact" class="h-screen justify-center items-center flex bg-cover bg-center bg-no-repeat">
-		<div class="container home flex flex-col gap-2 p-8">
-			<h1 class="text-lg font-semibold text-black text-center">Contact Me</h1>
-			<p>
-				If you're interested in working with me, feel free to contact me using the form below. I'll get back to
-				you as soon as possible.
-			</p>
-			<form action="mailto:jebcalix@gmail.com" method="post" enctype="text/plain">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<button type="submit" class="mt-5 bg-sky-500 hover:bg-sky-700 rounded-full">Submit</button>
-			</form>
-		</div>
-	</section>
-	<footer class="bg-gray-100">
-		<div class="flex justify-center bg-black text-white bottom w-full p-4">
-			<p>
-				&copy; 2025 Jairo Bonilla. All rights reserved.
-				<span class="mx-2">|</span>
-				<a href="./advertising-policy.html" target="_blank" rel="noopener noreferrer" class="underline">
+					<div class="mt-6 flex flex-wrap items-center gap-3">
+						<a href="#projects"
+							class="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-violet-500/20 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							data-i18n="hero.ctaPrimary">
+							View projects
+						</a>
+						<a href="#contact"
+							class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							data-i18n="hero.ctaSecondary">
+							Contact me
+						</a>
+
+						<div class="flex items-center gap-2">
+							<a href="https://github.com/jebcalix" target="_blank" rel="noopener noreferrer"
+								class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+								aria-label="GitHub">
+								<img src="./images/github.svg" alt="" class="h-5 w-5" />
+							</a>
+							<a href="https://www.linkedin.com/in/jebcalix/" target="_blank" rel="noopener noreferrer"
+								class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+								aria-label="LinkedIn">
+								<img src="./images/linkedin.svg" alt="" class="h-5 w-5" />
+							</a>
+						</div>
+					</div>
+
+					<div class="mt-8 flex flex-wrap gap-2">
+						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</span>
+						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Express</span>
+						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Flutter</span>
+						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">AWS</span>
+						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</span>
+					</div>
+				</div>
+
+				<div class="md:col-span-5">
+					<div class="relative mx-auto w-full max-w-sm">
+						<div class="absolute -inset-2 -z-10 rounded-[2rem] bg-gradient-to-tr from-violet-500/30 via-sky-500/20 to-emerald-400/20 blur-2xl"></div>
+						<div class="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/30">
+							<img src="./images/1612741342.jpg" alt="Jairo Bonilla"
+								class="aspect-square w-full rounded-2xl object-cover ring-1 ring-white/10" />
+
+							<div class="mt-4">
+								<div class="text-lg font-semibold text-white">Jairo Bonilla</div>
+								<div class="mt-1 text-sm text-slate-200" data-i18n="hero.cardRole">Full‑stack · Node.js · Flutter</div>
+								<div class="mt-3 grid grid-cols-2 gap-2 text-sm">
+									<div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+										<div class="text-xs text-slate-300" data-i18n="hero.cardFocus1Label">Focus</div>
+										<div class="mt-1 font-semibold text-white" data-i18n="hero.cardFocus1Value">Backends & APIs</div>
+									</div>
+									<div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+										<div class="text-xs text-slate-300" data-i18n="hero.cardFocus2Label">Also</div>
+										<div class="mt-1 font-semibold text-white" data-i18n="hero.cardFocus2Value">Flutter apps</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-12 grid gap-3 md:mt-14 md:grid-cols-4">
+				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m1Value">5+ yrs</div>
+					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m1Label">Building production software</div>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m2Value">Node.js</div>
+					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m2Label">APIs, jobs, integrations</div>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m3Value">Flutter</div>
+					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m3Label">Mobile apps & UI systems</div>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m4Value">AWS</div>
+					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m4Label">Lambda, S3, EC2, DynamoDB</div>
+				</div>
+			</section>
+
+			<section id="about" class="mt-14 scroll-mt-24">
+				<div class="flex items-end justify-between gap-6">
+					<div>
+						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="about.title">About</h2>
+						<p class="mt-2 max-w-2xl text-slate-200" data-i18n="about.subtitle">A pragmatic builder focused on reliability, clean UX, and shipping.</p>
+					</div>
+				</div>
+
+				<div class="mt-6 grid gap-4 md:grid-cols-3">
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5 md:col-span-2">
+						<p class="text-slate-200" data-i18n="about.p1">
+							I’m a full‑stack developer with experience in JavaScript/TypeScript, Node.js, React, Flutter, and cloud-native AWS services.
+						</p>
+						<p class="mt-4 text-slate-200" data-i18n="about.p2">
+							I’ve built payment flows, scheduling systems, ERPs, and operations dashboards—always prioritizing performance, security, and maintainability.
+						</p>
+					</div>
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="text-sm font-semibold text-white" data-i18n="about.highlightsTitle">Highlights</div>
+						<ul class="mt-3 space-y-2 text-sm text-slate-200">
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="about.h1">REST APIs, background jobs, integrations</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="about.h2">PostgreSQL / MySQL / MongoDB</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="about.h3">AWS Lambda, API Gateway, observability</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span><span data-i18n="about.h4">Flutter UI, state management, releases</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="mt-14 scroll-mt-24">
+				<div class="flex items-end justify-between gap-6">
+					<div>
+						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="projects.title">Featured projects</h2>
+						<p class="mt-2 max-w-2xl text-slate-200" data-i18n="projects.subtitle">A few examples of systems I’ve shipped. (These can be expanded with links/case studies.)</p>
+					</div>
+				</div>
+
+				<div class="mt-6 grid gap-4 md:grid-cols-2">
+					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p1Title">E‑commerce Payment Gateway</h3>
+							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p1Tag">Backend</span>
+						</div>
+						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p1Desc">
+							Payment workflow and services enabling credit card payments with auditability and reliability.
+						</p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AWS Lambda</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">API Gateway</li>
+						</ul>
+						<ul class="mt-4 space-y-2 text-sm text-slate-200">
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="projects.p1Bullet1">Designed APIs and data model for payment events</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="projects.p1Bullet2">Deployed serverless workloads with monitoring</span></li>
+						</ul>
+					</article>
+
+					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p2Title">Appointment Scheduling Web App</h3>
+							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p2Tag">Full‑stack</span>
+						</div>
+						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p2Desc">
+							A scheduling system for customers to book appointments, print tickets, and streamline in‑branch flow.
+						</p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">.NET</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">SQL Server</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Web UI</li>
+						</ul>
+						<ul class="mt-4 space-y-2 text-sm text-slate-200">
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="projects.p2Bullet1">Built reliable flows for booking and ticket generation</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="projects.p2Bullet2">Improved user experience and operational throughput</span></li>
+						</ul>
+					</article>
+
+					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p3Title">Farm Management Platform</h3>
+							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p3Tag">Web</span>
+						</div>
+						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p3Desc">
+							Inventory tracking, chemical applications, and plantation condition monitoring dashboards.
+						</p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PHP</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JavaScript</li>
+						</ul>
+					</article>
+
+					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p4Title">ERP & APS System</h3>
+							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p4Tag">Business</span>
+						</div>
+						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p4Desc">
+							Business platform for user management, planning, and operational workflows across teams.
+						</p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PHP</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</li>
+							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JavaScript</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section id="skills" class="mt-14 scroll-mt-24">
+				<div>
+					<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="skills.title">Skills</h2>
+					<p class="mt-2 max-w-2xl text-slate-200" data-i18n="skills.subtitle">Grouped by what I use to ship complete products.</p>
+				</div>
+
+				<div class="mt-6 grid gap-4 md:grid-cols-2">
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="text-sm font-semibold text-white" data-i18n="skills.backendTitle">Backend</div>
+						<div class="mt-3 flex flex-wrap gap-2">
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Express</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">REST</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Auth</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Integrations</span>
+						</div>
+					</div>
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="text-sm font-semibold text-white" data-i18n="skills.mobileTitle">Mobile</div>
+						<div class="mt-3 flex flex-wrap gap-2">
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Flutter</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Dart</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">UI systems</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">State mgmt</span>
+						</div>
+					</div>
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="text-sm font-semibold text-white" data-i18n="skills.cloudTitle">Cloud</div>
+						<div class="mt-3 flex flex-wrap gap-2">
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AWS Lambda</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">S3</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">EC2</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">CloudWatch</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">DynamoDB</span>
+						</div>
+					</div>
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="text-sm font-semibold text-white" data-i18n="skills.dataTitle">Data</div>
+						<div class="mt-3 flex flex-wrap gap-2">
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">SQL Server</span>
+							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MongoDB</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="experience" class="mt-14 scroll-mt-24">
+				<div>
+					<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="exp.title">Experience</h2>
+					<p class="mt-2 max-w-2xl text-slate-200" data-i18n="exp.subtitle">A lightweight timeline of what I’ve delivered.</p>
+				</div>
+
+				<div class="mt-6 grid gap-4">
+					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+						<div class="flex flex-wrap items-baseline justify-between gap-2">
+							<div class="text-base font-semibold text-white" data-i18n="exp.e1Title">Full‑Stack Developer</div>
+							<div class="text-xs text-slate-300" data-i18n="exp.e1Meta">Web · Mobile · Cloud</div>
+						</div>
+						<ul class="mt-3 space-y-2 text-sm text-slate-200">
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1Bullet1">Delivered end‑to‑end features across backend, frontend, and mobile</span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1Bullet2">Designed schemas, optimized queries, and shipped reliable releases</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="mt-14 scroll-mt-24">
+				<div class="grid gap-8 md:grid-cols-12 md:items-start">
+					<div class="md:col-span-5">
+						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="contact.title">Contact</h2>
+						<p class="mt-2 text-slate-200" data-i18n="contact.subtitle">
+							Tell me about your project. I’ll reply with next steps and a realistic estimate.
+						</p>
+
+						<div class="mt-5 flex flex-col gap-2 text-sm text-slate-200">
+							<a href="mailto:jebcalix@gmail.com"
+								class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 font-semibold text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+								data-i18n="contact.emailCta">
+								Email: jebcalix@gmail.com
+							</a>
+						</div>
+					</div>
+
+					<div class="md:col-span-7">
+						<form class="rounded-2xl border border-white/10 bg-white/5 p-5"
+							action="mailto:jebcalix@gmail.com" method="post" enctype="text/plain">
+							<div class="grid gap-4 md:grid-cols-2">
+								<div class="md:col-span-1">
+									<label for="name" class="text-sm font-semibold text-white" data-i18n="contact.nameLabel">Name</label>
+									<input type="text" id="name" name="name" required
+										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+										data-i18n-placeholder="contact.namePlaceholder" placeholder="Your name" />
+								</div>
+								<div class="md:col-span-1">
+									<label for="email" class="text-sm font-semibold text-white" data-i18n="contact.emailLabel">Email</label>
+									<input type="email" id="email" name="email" required
+										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+										data-i18n-placeholder="contact.emailPlaceholder" placeholder="you@example.com" />
+								</div>
+								<div class="md:col-span-2">
+									<label for="message" class="text-sm font-semibold text-white" data-i18n="contact.messageLabel">Message</label>
+									<textarea id="message" name="message" required rows="5"
+										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+										data-i18n-placeholder="contact.messagePlaceholder"
+										placeholder="What are you building, and what’s your timeline?"></textarea>
+								</div>
+							</div>
+							<div class="mt-4 flex items-center justify-between gap-3">
+								<p class="text-xs text-slate-300" data-i18n="contact.note">This form opens your email client (no backend required).</p>
+								<button type="submit"
+									class="inline-flex items-center justify-center rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-violet-500/20 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+									data-i18n="contact.submit">
+									Send
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="border-t border-white/10 py-10">
+			<div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 text-sm text-slate-300 md:flex-row md:items-center md:justify-between md:px-6">
+				<p>
+					<span>&copy;</span>
+					<span id="year">2026</span>
+					<span data-i18n="footer.rights">Jairo Bonilla. All rights reserved.</span>
+				</p>
+				<a href="./advertising-policy.html" target="_blank" rel="noopener noreferrer"
+					class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+					data-i18n="footer.policy">
 					Smart IPTV Advertising Policy
 				</a>
-			</p>
-		</div>
-	</footer>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		(() => {
+			const STORAGE_KEY = "jb_lang";
+			const SUPPORTED = ["en", "es"];
+
+			const dict = {
+				en: {
+					"nav.name": "Jairo Bonilla",
+					"nav.role": "Full‑Stack Developer",
+					"nav.about": "About",
+					"nav.projects": "Projects",
+					"nav.skills": "Skills",
+					"nav.experience": "Experience",
+					"nav.contact": "Contact",
+					"nav.language": "Language",
+					"hero.badge": "Available for freelance & remote",
+					"hero.h1a": "Full‑stack engineer",
+					"hero.h1b": "building web & mobile products",
+					"hero.summary": "I build reliable backends with Node.js, ship Flutter apps, and deploy to AWS with observability and performance in mind.",
+					"hero.ctaPrimary": "View projects",
+					"hero.ctaSecondary": "Contact me",
+					"hero.cardRole": "Full‑stack · Node.js · Flutter",
+					"hero.cardFocus1Label": "Focus",
+					"hero.cardFocus1Value": "Backends & APIs",
+					"hero.cardFocus2Label": "Also",
+					"hero.cardFocus2Value": "Flutter apps",
+					"metrics.m1Value": "5+ yrs",
+					"metrics.m1Label": "Building production software",
+					"metrics.m2Value": "Node.js",
+					"metrics.m2Label": "APIs, jobs, integrations",
+					"metrics.m3Value": "Flutter",
+					"metrics.m3Label": "Mobile apps & UI systems",
+					"metrics.m4Value": "AWS",
+					"metrics.m4Label": "Lambda, S3, EC2, DynamoDB",
+					"about.title": "About",
+					"about.subtitle": "A pragmatic builder focused on reliability, clean UX, and shipping.",
+					"about.p1": "I’m a full‑stack developer with experience in JavaScript/TypeScript, Node.js, React, Flutter, and cloud-native AWS services.",
+					"about.p2": "I’ve built payment flows, scheduling systems, ERPs, and operations dashboards—always prioritizing performance, security, and maintainability.",
+					"about.highlightsTitle": "Highlights",
+					"about.h1": "REST APIs, background jobs, integrations",
+					"about.h2": "PostgreSQL / MySQL / MongoDB",
+					"about.h3": "AWS Lambda, API Gateway, observability",
+					"about.h4": "Flutter UI, state management, releases",
+					"projects.title": "Featured projects",
+					"projects.subtitle": "A few examples of systems I’ve shipped. (These can be expanded with links/case studies.)",
+					"projects.p1Title": "E‑commerce Payment Gateway",
+					"projects.p1Tag": "Backend",
+					"projects.p1Desc": "Payment workflow and services enabling credit card payments with auditability and reliability.",
+					"projects.p1Bullet1": "Designed APIs and data model for payment events",
+					"projects.p1Bullet2": "Deployed serverless workloads with monitoring",
+					"projects.p2Title": "Appointment Scheduling Web App",
+					"projects.p2Tag": "Full‑stack",
+					"projects.p2Desc": "A scheduling system for customers to book appointments, print tickets, and streamline in‑branch flow.",
+					"projects.p2Bullet1": "Built reliable flows for booking and ticket generation",
+					"projects.p2Bullet2": "Improved user experience and operational throughput",
+					"projects.p3Title": "Farm Management Platform",
+					"projects.p3Tag": "Web",
+					"projects.p3Desc": "Inventory tracking, chemical applications, and plantation condition monitoring dashboards.",
+					"projects.p4Title": "ERP & APS System",
+					"projects.p4Tag": "Business",
+					"projects.p4Desc": "Business platform for user management, planning, and operational workflows across teams.",
+					"skills.title": "Skills",
+					"skills.subtitle": "Grouped by what I use to ship complete products.",
+					"skills.backendTitle": "Backend",
+					"skills.mobileTitle": "Mobile",
+					"skills.cloudTitle": "Cloud",
+					"skills.dataTitle": "Data",
+					"exp.title": "Experience",
+					"exp.subtitle": "A lightweight timeline of what I’ve delivered.",
+					"exp.e1Title": "Full‑Stack Developer",
+					"exp.e1Meta": "Web · Mobile · Cloud",
+					"exp.e1Bullet1": "Delivered end‑to‑end features across backend, frontend, and mobile",
+					"exp.e1Bullet2": "Designed schemas, optimized queries, and shipped reliable releases",
+					"contact.title": "Contact",
+					"contact.subtitle": "Tell me about your project. I’ll reply with next steps and a realistic estimate.",
+					"contact.emailCta": "Email: jebcalix@gmail.com",
+					"contact.nameLabel": "Name",
+					"contact.namePlaceholder": "Your name",
+					"contact.emailLabel": "Email",
+					"contact.emailPlaceholder": "you@example.com",
+					"contact.messageLabel": "Message",
+					"contact.messagePlaceholder": "What are you building, and what’s your timeline?",
+					"contact.note": "This form opens your email client (no backend required).",
+					"contact.submit": "Send",
+					"footer.rights": " Jairo Bonilla. All rights reserved.",
+					"footer.policy": "Smart IPTV Advertising Policy",
+				},
+				es: {
+					"nav.name": "Jairo Bonilla",
+					"nav.role": "Desarrollador Full‑Stack",
+					"nav.about": "Acerca de",
+					"nav.projects": "Proyectos",
+					"nav.skills": "Habilidades",
+					"nav.experience": "Experiencia",
+					"nav.contact": "Contacto",
+					"nav.language": "Idioma",
+					"hero.badge": "Disponible para freelance y remoto",
+					"hero.h1a": "Ingeniero full‑stack",
+					"hero.h1b": "para productos web y móviles",
+					"hero.summary": "Construyo backends confiables con Node.js, desarrollo apps en Flutter y despliego en AWS con observabilidad y performance en mente.",
+					"hero.ctaPrimary": "Ver proyectos",
+					"hero.ctaSecondary": "Contáctame",
+					"hero.cardRole": "Full‑stack · Node.js · Flutter",
+					"hero.cardFocus1Label": "Enfoque",
+					"hero.cardFocus1Value": "Backends y APIs",
+					"hero.cardFocus2Label": "También",
+					"hero.cardFocus2Value": "Apps Flutter",
+					"metrics.m1Value": "5+ años",
+					"metrics.m1Label": "Creando software en producción",
+					"metrics.m2Value": "Node.js",
+					"metrics.m2Label": "APIs, jobs, integraciones",
+					"metrics.m3Value": "Flutter",
+					"metrics.m3Label": "Apps móviles y UI systems",
+					"metrics.m4Value": "AWS",
+					"metrics.m4Label": "Lambda, S3, EC2, DynamoDB",
+					"about.title": "Acerca de",
+					"about.subtitle": "Pragmático, enfocado en confiabilidad, buen UX y entrega continua.",
+					"about.p1": "Soy desarrollador full‑stack con experiencia en JavaScript/TypeScript, Node.js, React, Flutter y servicios cloud‑native de AWS.",
+					"about.p2": "He construido flujos de pago, sistemas de citas, ERPs y dashboards operativos, priorizando performance, seguridad y mantenibilidad.",
+					"about.highlightsTitle": "Fortalezas",
+					"about.h1": "APIs REST, jobs en segundo plano, integraciones",
+					"about.h2": "PostgreSQL / MySQL / MongoDB",
+					"about.h3": "AWS Lambda, API Gateway, observabilidad",
+					"about.h4": "Flutter UI, state management, releases",
+					"projects.title": "Proyectos destacados",
+					"projects.subtitle": "Ejemplos de sistemas que he entregado. (Se pueden ampliar con links/casos.)",
+					"projects.p1Title": "Pasarela de Pago E‑commerce",
+					"projects.p1Tag": "Backend",
+					"projects.p1Desc": "Flujo de pago y servicios para cobros con tarjeta con trazabilidad y confiabilidad.",
+					"projects.p1Bullet1": "Diseño de APIs y modelo de datos para eventos de pago",
+					"projects.p1Bullet2": "Despliegue serverless con monitoreo",
+					"projects.p2Title": "App Web de Citas",
+					"projects.p2Tag": "Full‑stack",
+					"projects.p2Desc": "Sistema para agendar citas, imprimir tickets y mejorar el flujo operativo en sucursales.",
+					"projects.p2Bullet1": "Flujos confiables para reservas y generación de tickets",
+					"projects.p2Bullet2": "Mejoras de UX y eficiencia operativa",
+					"projects.p3Title": "Plataforma de Gestión de Fincas",
+					"projects.p3Tag": "Web",
+					"projects.p3Desc": "Inventario, aplicaciones químicas y monitoreo de condiciones con tableros.",
+					"projects.p4Title": "Sistema ERP & APS",
+					"projects.p4Tag": "Negocio",
+					"projects.p4Desc": "Plataforma para usuarios, planificación y flujos operativos entre equipos.",
+					"skills.title": "Habilidades",
+					"skills.subtitle": "Agrupadas por cómo entrego productos completos.",
+					"skills.backendTitle": "Backend",
+					"skills.mobileTitle": "Móvil",
+					"skills.cloudTitle": "Cloud",
+					"skills.dataTitle": "Datos",
+					"exp.title": "Experiencia",
+					"exp.subtitle": "Un timeline ligero de lo que he entregado.",
+					"exp.e1Title": "Desarrollador Full‑Stack",
+					"exp.e1Meta": "Web · Móvil · Cloud",
+					"exp.e1Bullet1": "Entrega de features end‑to‑end en backend, frontend y móvil",
+					"exp.e1Bullet2": "Diseño de esquemas, optimización de queries y releases confiables",
+					"contact.title": "Contacto",
+					"contact.subtitle": "Cuéntame de tu proyecto. Responderé con próximos pasos y una estimación realista.",
+					"contact.emailCta": "Email: jebcalix@gmail.com",
+					"contact.nameLabel": "Nombre",
+					"contact.namePlaceholder": "Tu nombre",
+					"contact.emailLabel": "Email",
+					"contact.emailPlaceholder": "tu@correo.com",
+					"contact.messageLabel": "Mensaje",
+					"contact.messagePlaceholder": "¿Qué estás construyendo y cuál es tu timeline?",
+					"contact.note": "Este formulario abre tu cliente de correo (sin backend).",
+					"contact.submit": "Enviar",
+					"footer.rights": " Jairo Bonilla. Todos los derechos reservados.",
+					"footer.policy": "Política de Publicidad (Smart IPTV)",
+				},
+			};
+
+			function detectDefaultLang() {
+				const saved = localStorage.getItem(STORAGE_KEY);
+				if (saved && SUPPORTED.includes(saved)) return saved;
+				const nav = (navigator.language || "en").toLowerCase();
+				return nav.startsWith("es") ? "es" : "en";
+			}
+
+			function setPressed(lang) {
+				const pairs = [
+					["lang-es", "es"],
+					["lang-en", "en"],
+					["lang-es-mobile", "es"],
+					["lang-en-mobile", "en"],
+				];
+				for (const [id, l] of pairs) {
+					const el = document.getElementById(id);
+					if (!el) continue;
+					const active = l === lang;
+					el.setAttribute("aria-pressed", String(active));
+					el.classList.toggle("bg-white/10", active);
+				}
+			}
+
+			function applyI18n(lang) {
+				const table = dict[lang] || dict.en;
+				document.documentElement.lang = lang;
+				for (const el of document.querySelectorAll("[data-i18n]")) {
+					const key = el.getAttribute("data-i18n");
+					if (!key) continue;
+					const value = table[key];
+					if (typeof value === "string") el.textContent = value;
+				}
+				for (const el of document.querySelectorAll("[data-i18n-placeholder]")) {
+					const key = el.getAttribute("data-i18n-placeholder");
+					if (!key) continue;
+					const value = table[key];
+					if (typeof value === "string") el.setAttribute("placeholder", value);
+				}
+				setPressed(lang);
+			}
+
+			function setLang(lang) {
+				localStorage.setItem(STORAGE_KEY, lang);
+				applyI18n(lang);
+			}
+
+			const mobileBtn = document.getElementById("mobileMenuBtn");
+			const mobileMenu = document.getElementById("mobileMenu");
+			function closeMobileMenu() {
+				if (!mobileBtn || !mobileMenu) return;
+				mobileMenu.classList.add("hidden");
+				mobileBtn.setAttribute("aria-expanded", "false");
+				mobileBtn.setAttribute("aria-label", "Open menu");
+			}
+			function toggleMobileMenu() {
+				if (!mobileBtn || !mobileMenu) return;
+				const open = mobileMenu.classList.contains("hidden");
+				mobileMenu.classList.toggle("hidden", !open);
+				mobileBtn.setAttribute("aria-expanded", String(open));
+				mobileBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+			}
+			if (mobileBtn) mobileBtn.addEventListener("click", toggleMobileMenu);
+			if (mobileMenu) {
+				mobileMenu.addEventListener("click", (e) => {
+					const t = e.target;
+					if (t && t.tagName === "A") closeMobileMenu();
+				});
+			}
+
+			const yearEl = document.getElementById("year");
+			if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+			const defaultLang = detectDefaultLang();
+			applyI18n(defaultLang);
+
+			const hooks = [
+				["lang-es", "es"],
+				["lang-en", "en"],
+				["lang-es-mobile", "es"],
+				["lang-en-mobile", "en"],
+			];
+			for (const [id, lang] of hooks) {
+				const el = document.getElementById(id);
+				if (!el) continue;
+				el.addEventListener("click", () => setLang(lang));
+			}
+		})();
+	</script>
 </body>
 
 </html>

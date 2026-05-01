@@ -38,11 +38,82 @@
         line-height: 1.55;
       }
       header {
-        padding: 40px 20px 18px;
+        padding: 22px 20px 18px;
       }
       .wrap {
         max-width: var(--maxw);
         margin: 0 auto;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        border-bottom: 1px solid var(--border);
+        background: color-mix(in srgb, var(--bg) 70%, transparent);
+        backdrop-filter: blur(12px);
+      }
+      .topbarInner {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        text-decoration: none;
+      }
+      .logo {
+        height: 36px;
+        width: 36px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: color-mix(in srgb, var(--card) 70%, transparent);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .brandText {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+      .brandText strong {
+        font-size: 13px;
+      }
+      .brandText span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .topLinks {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .btnLink {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: color-mix(in srgb, var(--card) 75%, transparent);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .btnLink:hover {
+        text-decoration: none;
+        border-color: color-mix(in srgb, var(--border) 55%, white);
       }
       .title {
         display: flex;
@@ -159,6 +230,22 @@
     </style>
   </head>
   <body>
+    <div class="topbar">
+      <div class="topbarInner">
+        <a class="brand" href="./index.html" aria-label="Back to portfolio">
+          <span class="logo">JB</span>
+          <span class="brandText">
+            <strong>Jairo Bonilla</strong>
+            <span>Full‑stack · Node.js · Flutter</span>
+          </span>
+        </a>
+        <div class="topLinks">
+          <a class="btnLink" href="./index.html">Portfolio</a>
+          <a class="btnLink" href="mailto:jebcalix@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+
     <header>
       <div class="wrap">
         <div class="title">
@@ -282,6 +369,7 @@
     <footer>
       <div class="foot">
         <span class="pill">Advertising Policy</span>
+        <a class="pill" href="./index.html" style="color: var(--text); text-decoration: none">Portfolio</a>
         <span class="pill">JEB Studios Smart IPTV Player</span>
       </div>
     </footer>
