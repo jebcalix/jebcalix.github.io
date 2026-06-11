@@ -1,378 +1,348 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Advertising Policy | JEB Studios Smart IPTV Player</title>
-    <style>
-      :root {
-        --bg: #0b0f19;
-        --card: #111827;
-        --text: #e5e7eb;
-        --muted: #9ca3af;
-        --border: rgba(255, 255, 255, 0.12);
-        --accent: #7c3aed;
-        --link: #93c5fd;
-        --maxw: 920px;
-      }
-      @media (prefers-color-scheme: light) {
-        :root {
-          --bg: #f7f7fb;
-          --card: #ffffff;
-          --text: #111827;
-          --muted: #4b5563;
-          --border: rgba(17, 24, 39, 0.12);
-          --accent: #6d28d9;
-          --link: #1d4ed8;
-        }
-      }
-      body {
-        margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
-          "Segoe UI Emoji";
-        background: radial-gradient(1200px 600px at 15% -10%, rgba(124, 58, 237, 0.25), transparent 60%),
-          radial-gradient(900px 500px at 80% 10%, rgba(59, 130, 246, 0.18), transparent 55%),
-          var(--bg);
-        color: var(--text);
-        line-height: 1.55;
-      }
-      header {
-        padding: 22px 20px 18px;
-      }
-      .wrap {
-        max-width: var(--maxw);
-        margin: 0 auto;
-      }
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-        border-bottom: 1px solid var(--border);
-        background: color-mix(in srgb, var(--bg) 70%, transparent);
-        backdrop-filter: blur(12px);
-      }
-      .topbarInner {
-        max-width: var(--maxw);
-        margin: 0 auto;
-        padding: 12px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-      }
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--text);
-        text-decoration: none;
-      }
-      .logo {
-        height: 36px;
-        width: 36px;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        background: color-mix(in srgb, var(--card) 70%, transparent);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-      }
-      .brandText {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.1;
-      }
-      .brandText strong {
-        font-size: 13px;
-      }
-      .brandText span {
-        font-size: 12px;
-        color: var(--muted);
-      }
-      .topLinks {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      .btnLink {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 8px 12px;
-        border-radius: 999px;
-        border: 1px solid var(--border);
-        background: color-mix(in srgb, var(--card) 75%, transparent);
-        color: var(--text);
-        text-decoration: none;
-        font-size: 13px;
-      }
-      .btnLink:hover {
-        text-decoration: none;
-        border-color: color-mix(in srgb, var(--border) 55%, white);
-      }
-      .title {
-        display: flex;
-        gap: 14px;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 10px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: color-mix(in srgb, var(--card) 75%, transparent);
-        color: var(--muted);
-        font-size: 13px;
-      }
-      h1 {
-        margin: 0;
-        font-size: 30px;
-        letter-spacing: -0.02em;
-      }
-      .subtitle {
-        margin: 8px 0 0;
-        color: var(--muted);
-        max-width: 70ch;
-      }
-      main {
-        padding: 0 20px 60px;
-      }
-      .card {
-        background: color-mix(in srgb, var(--card) 92%, transparent);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-      }
-      h2 {
-        margin: 22px 0 10px;
-        font-size: 18px;
-        letter-spacing: -0.01em;
-      }
-      h2:first-child {
-        margin-top: 0;
-      }
-      p {
-        margin: 10px 0;
-      }
-      ul {
-        margin: 10px 0 0 18px;
-      }
-      li {
-        margin: 6px 0;
-      }
-      a {
-        color: var(--link);
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      .split {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-      @media (min-width: 900px) {
-        .split {
-          grid-template-columns: 1fr 1fr;
-          gap: 18px;
-        }
-      }
-      .lang {
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        padding: 16px;
-        background: color-mix(in srgb, var(--card) 86%, transparent);
-      }
-      .langHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-      }
-      .langHeader strong {
-        font-size: 14px;
-        color: var(--muted);
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-      }
-      footer {
-        padding: 0 20px 36px;
-        color: var(--muted);
-      }
-      .foot {
-        max-width: var(--maxw);
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
-        align-items: center;
-      }
-      .pill {
-        padding: 6px 10px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: color-mix(in srgb, var(--card) 75%, transparent);
-        font-size: 13px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="topbar">
-      <div class="topbarInner">
-        <a class="brand" href="./index.html" aria-label="Back to portfolio">
-          <span class="logo">JB</span>
-          <span class="brandText">
-            <strong>Jairo Bonilla</strong>
-            <span>Full‑stack · Node.js · Flutter</span>
-          </span>
-        </a>
-        <div class="topLinks">
-          <a class="btnLink" href="./index.html">Portfolio</a>
-          <a class="btnLink" href="mailto:jebcalix@gmail.com">Email</a>
-        </div>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de privacidad de JEB Studios Smart IPTV Player">
+  <title>Política de Privacidad — JEB Studios Smart IPTV Player</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1115;
+      --surface: #171a21;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #7c9cff;
+      --border: #2a2f3a;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.9rem;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    p,
+    li {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
     <header>
-      <div class="wrap">
-        <div class="title">
-          <h1>Advertising Policy</h1>
-          <span class="badge">JEB Studios Smart IPTV Player</span>
-        </div>
-        <p class="subtitle">
-          This page explains how advertising works (or does not work) in the app, and what it means for user data.
-        </p>
-      </div>
+      <h1>Política de Privacidad</h1>
+      <p class="subtitle">JEB Studios Smart IPTV Player</p>
+      <p class="meta">
+        <strong>Desarrollador:</strong> JEB Studios HN<br>
+        <strong>Correo de contacto:</strong> <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a><br>
+        <strong>Última actualización:</strong> 10 de junio de 2026
+      </p>
     </header>
 
-    <main>
-      <div class="wrap">
-        <div class="card">
-          <div class="split">
-            <section class="lang" lang="es">
-              <div class="langHeader">
-                <strong>Español</strong>
-                <span class="pill">Última actualización: 2026-05-01</span>
-              </div>
+    <section>
+      <h2>1. Introducción</h2>
+      <p>
+        La presente Política de Privacidad describe cómo <strong>JEB Studios HN</strong>
+        («nosotros», «el desarrollador») trata la información cuando usted utiliza la
+        aplicación móvil <strong>JEB Studios Smart IPTV Player</strong> (en adelante,
+        «la Aplicación»).
+      </p>
+      <p>
+        La Aplicación es un reproductor IPTV que permite conectarse a listas M3U/M3U8 o
+        servicios compatibles con Xtream Codes proporcionados por el propio usuario o su
+        proveedor de servicios. <strong>No alojamos, distribuimos ni controlamos el contenido
+          audiovisual reproducido.</strong>
+      </p>
+      <p>
+        Al utilizar la Aplicación, usted acepta las prácticas descritas en esta política.
+        Si no está de acuerdo, le recomendamos no utilizar la Aplicación.
+      </p>
+    </section>
 
-              <h2>1) Resumen</h2>
-              <p>
-                Actualmente, <strong>JEB Studios Smart IPTV Player</strong> <strong>no muestra publicidad de terceros</strong> ni
-                integra SDKs de redes publicitarias (por ejemplo, AdMob) dentro de la aplicación.
-              </p>
+    <section>
+      <h2>2. Responsable del tratamiento</h2>
+      <p>
+        El responsable del tratamiento de los datos descritos en esta política es:
+      </p>
+      <ul>
+        <li><strong>JEB Studios HN</strong></li>
+        <li>Correo electrónico: <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a></li>
+      </ul>
+    </section>
 
-              <h2>2) ¿La app muestra anuncios?</h2>
-              <p>
-                <strong>No.</strong> En la versión actual, la app está diseñada para reproducir contenido IPTV (listas M3U/M3U8 o
-                acceso por servidor) y no incluye banners, interstitials ni anuncios recompensados.
-              </p>
+    <section>
+      <h2>3. Información que recopilamos</h2>
+      <p>
+        La Aplicación está diseñada para funcionar principalmente como cliente local.
+        <strong>No operamos servidores propios para crear cuentas de usuario ni almacenar
+          credenciales en nuestros sistemas.</strong>
+      </p>
 
-              <h2>3) Datos relacionados con publicidad</h2>
-              <p>Debido a que no mostramos anuncios de terceros, <strong>no recopilamos</strong> datos con el propósito de:</p>
-              <ul>
-                <li>Segmentación o personalización de anuncios.</li>
-                <li>Medición de campañas publicitarias.</li>
-                <li>Remarketing o perfiles publicitarios.</li>
-              </ul>
+      <h3>3.1. Datos que usted introduce</h3>
+      <p>La Aplicación puede almacenar en su dispositivo, a petición suya:</p>
+      <ul>
+        <li>URL de listas de reproducción M3U/M3U8.</li>
+        <li>Datos de acceso a servicios Xtream (URL del servidor, nombre de usuario y contraseña).</li>
+        <li>Canales, películas o series marcados como favoritos (título, URL de reproducción e imagen de portada, si
+          está disponible).</li>
+      </ul>
 
-              <h2>4) Publicidad personalizada</h2>
-              <p>
-                <strong>No aplicable</strong> por el momento. Si en el futuro incorporamos publicidad, informaremos si es
-                personalizada o no personalizada y qué opciones de control tendrá el usuario.
-              </p>
+      <h3>3.2. Datos almacenados localmente en el dispositivo</h3>
+      <p>
+        Las credenciales y la configuración del perfil activo se guardan de forma cifrada
+        en el dispositivo mediante almacenamiento seguro del sistema operativo.
+        Los favoritos se guardan localmente en el dispositivo.
+      </p>
+      <p>
+        Estos datos permanecen en su teléfono o tableta y no se envían automáticamente a
+        servidores de JEB Studios HN.
+      </p>
 
-              <h2>5) Cambios futuros</h2>
-              <p>
-                Si en algún momento añadimos publicidad (por ejemplo, mediante un proveedor como Google AdMob u otra red), esta
-                política se actualizará antes o en el momento del lanzamiento de esa versión, indicando:
-              </p>
-              <ul>
-                <li>Proveedor(es) de anuncios utilizados.</li>
-                <li>Qué datos pueden recopilarse para mostrar/medir anuncios.</li>
-                <li>Opciones de exclusión y controles disponibles.</li>
-              </ul>
+      <h3>3.3. Datos de red y contenido de terceros</h3>
+      <p>
+        Para funcionar, la Aplicación se conecta a Internet y comunica con:
+      </p>
+      <ul>
+        <li>El servidor o proveedor IPTV que usted configure.</li>
+        <li>Servidores de imágenes asociados a los metadatos del catálogo (por ejemplo, pósters).</li>
+        <li>Servicios de terceros descritos en la sección 5 de esta política.</li>
+      </ul>
+      <p>
+        El tratamiento de datos realizado por su proveedor IPTV se rige por las políticas
+        de dicho proveedor, no por la nuestra.
+      </p>
 
-              <h2>6) Contacto</h2>
-              <p>
-                Si tienes preguntas sobre esta Política de Publicidad, contáctanos en:
-                <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a>.
-              </p>
-            </section>
+      <h3>3.4. Datos recopilados por servicios de publicidad</h3>
+      <p>
+        En dispositivos Android, la Aplicación muestra anuncios mediante
+        <strong>Google AdMob</strong>. Google puede recopilar identificadores publicitarios,
+        dirección IP, información del dispositivo, interacciones con anuncios y otros datos
+        técnicos conforme a sus propias políticas.
+      </p>
+    </section>
 
-            <section class="lang" lang="en">
-              <div class="langHeader">
-                <strong>English</strong>
-                <span class="pill">Last updated: 2026-05-01</span>
-              </div>
+    <section>
+      <h2>4. Cómo utilizamos la información</h2>
+      <p>Utilizamos la información descrita únicamente para:</p>
+      <ul>
+        <li>Permitir la conexión con su fuente IPTV y reproducir contenido.</li>
+        <li>Recordar su configuración, credenciales y favoritos en el dispositivo.</li>
+        <li>Mostrar imágenes y metadatos del catálogo.</li>
+        <li>Permitir funciones de transmisión a dispositivos compatibles (por ejemplo, Chromecast).</li>
+        <li>Mostrar publicidad en la versión para Android.</li>
+        <li>Mejorar la estabilidad y el funcionamiento de la Aplicación.</li>
+      </ul>
+      <p>
+        <strong>No vendemos ni alquilamos sus datos personales.</strong>
+      </p>
+    </section>
 
-              <h2>1) Summary</h2>
-              <p>
-                At this time, <strong>JEB Studios Smart IPTV Player</strong> <strong>does not display third‑party ads</strong> and
-                does not include advertising network SDKs (for example, AdMob) inside the app.
-              </p>
+    <section>
+      <h2>5. Servicios de terceros</h2>
+      <p>La Aplicación integra servicios de terceros que pueden tratar datos de forma independiente:</p>
+      <ul>
+        <li>
+          <strong>Google AdMob / Google Mobile Ads SDK</strong> — publicidad en Android.
+          Política de privacidad:
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer"
+            target="_blank">https://policies.google.com/privacy</a>
+        </li>
+        <li>
+          <strong>Google Cast</strong> — descubrimiento y reproducción en dispositivos Cast
+          de su red local.
+          Política de privacidad:
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer"
+            target="_blank">https://policies.google.com/privacy</a>
+        </li>
+        <li>
+          <strong>Su proveedor IPTV</strong> — origen del catálogo y de las transmisiones.
+        </li>
+      </ul>
+      <p>
+        Le recomendamos revisar las políticas de privacidad de estos terceros para comprender
+        cómo tratan su información.
+      </p>
+    </section>
 
-              <h2>2) Does the app show ads?</h2>
-              <p>
-                <strong>No.</strong> The current version is focused on IPTV playback (M3U/M3U8 playlists or server login) and does
-                not include banners, interstitials, or rewarded ads.
-              </p>
+    <section>
+      <h2>6. Permisos del dispositivo</h2>
+      <p>En Android, la Aplicación puede solicitar o utilizar los siguientes permisos:</p>
+      <ul>
+        <li><strong>Internet</strong> — conexión con proveedores IPTV, imágenes y servicios de anuncios.</li>
+        <li><strong>Estado de la red</strong> — comprobar conectividad.</li>
+        <li><strong>Wi‑Fi</strong> — funciones relacionadas con red y transmisión.</li>
+        <li><strong>Multicast Wi‑Fi</strong> — descubrimiento de dispositivos Cast en la red local.</li>
+        <li><strong>Servicio en primer plano de reproducción multimedia</strong> — reproducción de audio/video en
+          segundo plano.</li>
+      </ul>
+    </section>
 
-              <h2>3) Advertising-related data</h2>
-              <p>Because we do not serve third‑party ads, we <strong>do not collect</strong> data for the purpose of:</p>
-              <ul>
-                <li>Ad targeting or ad personalization.</li>
-                <li>Advertising campaign measurement.</li>
-                <li>Remarketing or advertising profiling.</li>
-              </ul>
+    <section>
+      <h2>7. Conservación de los datos</h2>
+      <ul>
+        <li>
+          Los datos almacenados localmente (credenciales, favoritos y configuración) se
+          conservan en su dispositivo hasta que usted los elimine, desinstale la Aplicación
+          o utilice la opción de cambiar/cerrar sesión de cuenta dentro de la app.
+        </li>
+        <li>
+          Los datos tratados por Google AdMob u otros terceros se conservan conforme a
+          sus respectivas políticas.
+        </li>
+      </ul>
+    </section>
 
-              <h2>4) Personalized ads</h2>
-              <p>
-                <strong>Not applicable</strong> at the moment. If we introduce ads in the future, we will disclose whether ads are
-                personalized or non‑personalized, and which user controls are available.
-              </p>
+    <section>
+      <h2>8. Seguridad</h2>
+      <p>
+        Aplicamos medidas razonables para proteger la información almacenada en el dispositivo,
+        incluido el uso de almacenamiento cifrado para credenciales sensibles. No obstante,
+        ningún método de transmisión o almacenamiento electrónico es completamente seguro.
+      </p>
+      <p>
+        Usted es responsable de mantener la confidencialidad de sus credenciales IPTV y de
+        utilizar fuentes de contenido legítimas.
+      </p>
+    </section>
 
-              <h2>5) Future changes</h2>
-              <p>
-                If we ever add advertising (for example, using a provider such as Google AdMob or another ad network), we will
-                update this policy before (or at) the release of that version, including:
-              </p>
-              <ul>
-                <li>The ad provider(s) we use.</li>
-                <li>What data may be collected to show/measure ads.</li>
-                <li>Opt‑out options and available controls.</li>
-              </ul>
+    <section>
+      <h2>9. Menores de edad</h2>
+      <p>
+        La Aplicación no está dirigida a menores de 13 años. No recopilamos de forma
+        consciente información personal de menores. Si cree que un menor nos ha proporcionado
+        datos, contáctenos para que podamos tomar las medidas apropiadas.
+      </p>
+    </section>
 
-              <h2>6) Contact</h2>
-              <p>
-                If you have questions about this Advertising Policy, contact us at:
-                <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a>.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </main>
+    <section>
+      <h2>10. Sus derechos</h2>
+      <p>Dependiendo de su jurisdicción, usted puede tener derecho a:</p>
+      <ul>
+        <li>Acceder a la información que conserva la Aplicación en su dispositivo.</li>
+        <li>Rectificar o eliminar credenciales y favoritos desde la propia Aplicación.</li>
+        <li>Retirar su consentimiento desinstalando la Aplicación.</li>
+        <li>Limitar la publicidad personalizada desde la configuración de su dispositivo o de Google.</li>
+      </ul>
+      <p>
+        Para ejercer sus derechos o formular consultas, escríbanos a
+        <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Transferencias internacionales</h2>
+      <p>
+        Al utilizar servicios de terceros como Google AdMob o conectarse a proveedores IPTV,
+        sus datos pueden ser tratados en países distintos al suyo, de acuerdo con las
+        políticas de dichos proveedores.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Cambios en esta política</h2>
+      <p>
+        Podemos actualizar esta Política de Privacidad ocasionalmente. Publicaremos la
+        versión revisada en la misma URL con una nueva fecha de «Última actualización».
+        Le recomendamos revisarla periódicamente.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Contacto</h2>
+      <p>
+        Si tiene preguntas sobre esta Política de Privacidad o sobre el tratamiento de
+        sus datos, puede contactarnos en:
+      </p>
+      <ul>
+        <li><strong>JEB Studios HN</strong></li>
+        <li>Correo: <a href="mailto:jebcalix@gmail.com">jebcalix@gmail.com</a></li>
+      </ul>
+    </section>
 
     <footer>
-      <div class="foot">
-        <span class="pill">Advertising Policy</span>
-        <a class="pill" href="./index.html" style="color: var(--text); text-decoration: none">Portfolio</a>
-        <span class="pill">JEB Studios Smart IPTV Player</span>
-      </div>
+      © 2026 JEB Studios HN — JEB Studios Smart IPTV Player
     </footer>
-  </body>
-</html>
+  </main>
+</body>
 
+</html>
