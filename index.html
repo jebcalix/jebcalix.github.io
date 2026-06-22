@@ -1,574 +1,534 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark" data-theme-mode="system">
 
 <head>
 	<title>Jairo Bonilla — Backend & Full‑Stack Developer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Portfolio of Jairo Bonilla — Backend & Full-Stack Developer from Honduras. Node.js, AWS, Flutter, JEB Studios mobile apps." />
 	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	<link rel="preconnect" href="https://unpkg.com" />
-	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 	<link rel="stylesheet" href="./styles.css" />
-
 </head>
 
 <body>
 	<a href="#main"
-		class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-xl focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900 focus:shadow-lg">
+		class="site-skip sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-xl focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-lg">
 		Skip to content
 	</a>
 
-	<div
-		class="min-h-screen bg-slate-950 text-slate-100 selection:bg-violet-500/30 selection:text-white [color-scheme:dark]">
+	<div class="site-shell min-h-screen selection:text-white">
 		<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-			<div
-				class="absolute -top-40 left-[-20rem] h-[34rem] w-[34rem] rounded-full bg-violet-500/25 blur-3xl">
-			</div>
-			<div
-				class="absolute top-[-12rem] right-[-18rem] h-[30rem] w-[30rem] rounded-full bg-sky-500/20 blur-3xl">
-			</div>
+			<div class="site-glow-violet absolute -top-40 left-[-20rem] h-[34rem] w-[34rem] rounded-full blur-3xl"></div>
+			<div class="site-glow-sky absolute top-[-12rem] right-[-18rem] h-[30rem] w-[30rem] rounded-full blur-3xl"></div>
 		</div>
 
-		<header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur supports-[backdrop-filter]:bg-slate-950/50">
+		<header class="site-header sticky top-0 z-50 border-b backdrop-blur supports-[backdrop-filter]:bg-opacity-50">
 			<div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:px-6">
 				<a href="#home" class="flex items-center gap-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-400/60">
-					<span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/10">
-						<span class="text-sm font-bold">JB</span>
+					<span class="site-card inline-flex h-9 w-9 items-center justify-center rounded-xl ring-1 ring-inset">
+						<span class="text-sm font-bold site-heading">JB</span>
 					</span>
 					<div class="hidden sm:block">
-						<div class="text-sm font-semibold leading-tight" data-i18n="nav.name">Jairo Bonilla</div>
-						<div class="text-xs text-slate-300" data-i18n="nav.role">Backend & Full‑Stack Developer</div>
+						<div class="text-sm font-semibold leading-tight site-heading" data-i18n="nav.name">Jairo Bonilla</div>
+						<div class="text-xs site-subtle" data-i18n="nav.role">Backend & Full‑Stack Developer</div>
 					</div>
 				</a>
 
 				<nav class="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
-					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-						href="#about" data-i18n="nav.about">About</a>
-					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-						href="#projects" data-i18n="nav.projects">Projects</a>
-					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-						href="#skills" data-i18n="nav.skills">Skills</a>
-					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-						href="#experience" data-i18n="nav.experience">Experience</a>
-					<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-						href="#contact" data-i18n="nav.contact">Contact</a>
+					<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" href="#experience" data-i18n="nav.experience">Experience</a>
+					<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" href="#apps" data-i18n="nav.apps">Apps</a>
+					<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" href="#projects" data-i18n="nav.projects">Projects</a>
+					<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" href="#about" data-i18n="nav.about">About</a>
+					<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" href="#contact" data-i18n="nav.contact">Contact</a>
 				</nav>
 
 				<div class="flex items-center gap-2">
-					<div class="hidden items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1 md:flex"
-						role="group" aria-label="Language selector">
-						<button id="lang-es" type="button"
-							class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							aria-pressed="false">ES</button>
-						<button id="lang-en" type="button"
-							class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							aria-pressed="true">EN</button>
+					<div class="relative">
+						<button id="prefsBtn" type="button"
+							class="site-icon-btn site-card inline-flex items-center justify-center rounded-xl border p-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+							aria-haspopup="true" aria-expanded="false" aria-controls="prefsMenu"
+							data-i18n-aria-label="prefs.label">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+							</svg>
+						</button>
+						<div id="prefsMenu" class="prefs-panel hidden" role="menu">
+							<p class="prefs-label" data-i18n="prefs.chooseTheme">Choose theme</p>
+							<button id="theme-light" type="button" role="menuitemradio" class="prefs-option site-muted" data-i18n="theme.light">Light</button>
+							<button id="theme-dark" type="button" role="menuitemradio" class="prefs-option site-muted" data-i18n="theme.dark">Dark</button>
+							<button id="theme-system" type="button" role="menuitemradio" class="prefs-option site-muted theme-active" data-i18n="theme.system">System</button>
+							<hr class="prefs-divider" />
+							<p class="prefs-label" data-i18n="prefs.chooseLang">Choose language</p>
+							<button id="lang-en" type="button" role="menuitemradio" class="prefs-option site-muted lang-active" aria-pressed="true" data-i18n="prefs.langEn">English</button>
+							<button id="lang-es" type="button" role="menuitemradio" class="prefs-option site-muted" aria-pressed="false" data-i18n="prefs.langEs">Español</button>
+						</div>
 					</div>
 
 					<button id="mobileMenuBtn" type="button"
-						class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-slate-100 shadow-sm hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60 md:hidden"
+						class="site-icon-btn site-card inline-flex items-center justify-center rounded-xl border p-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60 md:hidden"
 						aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
-							stroke="currentColor" class="h-5 w-5">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 						</svg>
 					</button>
 				</div>
 			</div>
 
-			<div id="mobileMenu" class="hidden border-t border-white/10 md:hidden">
+			<div id="mobileMenu" class="hidden border-t site-header md:hidden">
 				<div class="mx-auto max-w-6xl px-4 py-3">
 					<div class="flex flex-col gap-1">
-						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							href="#about" data-i18n="nav.about">About</a>
-						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							href="#projects" data-i18n="nav.projects">Projects</a>
-						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							href="#skills" data-i18n="nav.skills">Skills</a>
-						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							href="#experience" data-i18n="nav.experience">Experience</a>
-						<a class="rounded-xl px-3 py-2 text-sm text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							href="#contact" data-i18n="nav.contact">Contact</a>
-					</div>
-
-					<div class="mt-3 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-2">
-						<div class="text-xs text-slate-300" data-i18n="nav.language">Language</div>
-						<div class="flex items-center gap-1" role="group" aria-label="Language selector (mobile)">
-							<button id="lang-es-mobile" type="button"
-								class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								aria-pressed="false">ES</button>
-							<button id="lang-en-mobile" type="button"
-								class="rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								aria-pressed="true">EN</button>
-						</div>
+						<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm" href="#experience" data-i18n="nav.experience">Experience</a>
+						<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm" href="#apps" data-i18n="nav.apps">Apps</a>
+						<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm" href="#projects" data-i18n="nav.projects">Projects</a>
+						<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm" href="#about" data-i18n="nav.about">About</a>
+						<a class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm" href="#contact" data-i18n="nav.contact">Contact</a>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main id="main" class="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
+			<!-- Hero -->
 			<section id="home" class="grid items-center gap-10 md:grid-cols-12 md:gap-8">
 				<div class="md:col-span-7">
-					<div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">
+					<div class="inline-flex items-center gap-2 rounded-full site-card border px-3 py-1 text-xs site-muted">
 						<span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-						<span data-i18n="hero.badge">Available for freelance & remote</span>
+						<span data-i18n="hero.badge">Available for remote work</span>
 					</div>
 
-					<h1 class="mt-5 text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl">
-						<span data-i18n="hero.h1a">Backend & full‑stack engineer</span>
-						<span class="text-slate-300" data-i18n="hero.h1b">building web & mobile products</span>
+					<h1 class="mt-5 text-balance text-4xl font-semibold tracking-tight site-heading md:text-5xl">
+						<span data-i18n="hero.greeting">Hey, I'm </span><span class="text-violet-400" data-i18n="hero.name">Jairo Bonilla</span>
 					</h1>
-
-					<p class="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-slate-200 md:text-lg"
-						data-i18n="hero.summary">
-						At Lynx Labs I build backend services with Node.js and Strapi on AWS (including Kubernetes). Previously at GreenPay I shipped a payment gateway and e‑commerce platform—Node.js, TypeScript, React, Angular, serverless AWS, and PostgreSQL. I also deliver mobile and integration work with Flutter when projects need it.
+					<p class="mt-3 text-lg site-muted md:text-xl">
+						<span data-i18n="hero.h1a">+10 years of experience.</span>
+						<span data-i18n="hero.h1b"> Backend & full‑stack engineer from Comayagua, Honduras 🇭🇳.</span>
 					</p>
 
-					<div class="mt-6 flex flex-wrap items-center gap-3">
-						<a href="#projects"
-							class="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-violet-500/20 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							data-i18n="hero.ctaPrimary">
-							View projects
-						</a>
-						<a href="#contact"
-							class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-							data-i18n="hero.ctaSecondary">
-							Contact me
-						</a>
+					<p class="mt-4 max-w-2xl text-pretty text-base leading-relaxed site-muted md:text-lg" data-i18n="hero.summary"></p>
 
+					<div class="mt-6 flex flex-wrap items-center gap-3">
+						<a href="#apps" class="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-violet-500/20 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n="hero.ctaPrimary">View apps</a>
+						<a href="#contact" class="site-card site-heading inline-flex items-center justify-center rounded-xl border px-4 py-2.5 text-sm font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n="hero.ctaSecondary">Contact me</a>
 						<div class="flex items-center gap-2">
-							<a href="https://github.com/jebcalix" target="_blank" rel="noopener noreferrer"
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								aria-label="GitHub">
-								<img src="./images/github.svg" alt="" class="h-5 w-5" />
+							<a href="https://github.com/jebcalix" target="_blank" rel="noopener noreferrer" class="site-icon-btn site-card inline-flex h-10 w-10 items-center justify-center rounded-xl border focus:outline-none focus:ring-2 focus:ring-violet-400/60" aria-label="GitHub">
+								<img src="./images/github.svg" alt="" class="h-5 w-5 dark:invert-0" />
 							</a>
-							<a href="https://www.linkedin.com/in/jebcalix/" target="_blank" rel="noopener noreferrer"
-								class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								aria-label="LinkedIn">
+							<a href="https://www.linkedin.com/in/jebcalix/" target="_blank" rel="noopener noreferrer" class="site-icon-btn site-card inline-flex h-10 w-10 items-center justify-center rounded-xl border focus:outline-none focus:ring-2 focus:ring-violet-400/60" aria-label="LinkedIn">
 								<img src="./images/linkedin.svg" alt="" class="h-5 w-5" />
 							</a>
 						</div>
 					</div>
 
 					<div class="mt-8 flex flex-wrap gap-2">
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">TypeScript</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">React</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Angular</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Flutter</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">AWS</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</span>
-						<span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">Strapi</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">Node.js</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">TypeScript</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">React</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">Flutter</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">AWS</span>
+						<span class="site-pill-wrap rounded-full border px-3 py-1 text-xs site-muted">Strapi</span>
 					</div>
 				</div>
 
 				<div class="md:col-span-5">
 					<div class="relative mx-auto w-full max-w-sm">
 						<div class="absolute -inset-2 -z-10 rounded-[2rem] bg-gradient-to-tr from-violet-500/30 via-sky-500/20 to-emerald-400/20 blur-2xl"></div>
-						<div class="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/30">
-							<img src="./images/1612741342.jpg" alt="Jairo Bonilla"
-								class="aspect-square w-full rounded-2xl object-cover ring-1 ring-white/10" />
-
+						<div class="site-card rounded-[2rem] border p-5 shadow-2xl shadow-black/10">
+							<img src="./images/1612741342.jpg" alt="Jairo Bonilla" class="aspect-square w-full rounded-2xl object-cover ring-1 ring-inset" style="--tw-ring-color: var(--c-border)" />
 							<div class="mt-4">
-								<div class="text-lg font-semibold text-white">Jairo Bonilla</div>
-								<div class="mt-1 text-sm text-slate-200" data-i18n="hero.cardRole">Backend · Node · Strapi · React/Angular · Flutter</div>
+								<div class="text-lg font-semibold site-heading">Jairo Bonilla</div>
+								<div class="mt-1 text-sm site-muted" data-i18n="hero.cardRole"></div>
 								<div class="mt-3 grid grid-cols-2 gap-2 text-sm">
-									<div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-										<div class="text-xs text-slate-300" data-i18n="hero.cardFocus1Label">Focus</div>
-										<div class="mt-1 font-semibold text-white" data-i18n="hero.cardFocus1Value">Backend, Strapi & AWS</div>
+									<div class="site-card rounded-2xl border p-3">
+										<div class="text-xs site-subtle" data-i18n="hero.cardFocus1Label">Focus</div>
+										<div class="mt-1 font-semibold site-heading" data-i18n="hero.cardFocus1Value"></div>
 									</div>
-									<div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-										<div class="text-xs text-slate-300" data-i18n="hero.cardFocus2Label">Also</div>
-										<div class="mt-1 font-semibold text-white" data-i18n="hero.cardFocus2Value">Flutter & legacy PHP/.NET</div>
+									<div class="site-card rounded-2xl border p-3">
+										<div class="text-xs site-subtle" data-i18n="hero.cardFocus2Label">Also</div>
+										<div class="mt-1 font-semibold site-heading" data-i18n="hero.cardFocus2Value"></div>
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
 
+			<!-- Metrics -->
 			<section class="mt-12 grid gap-3 md:mt-14 md:grid-cols-4">
-				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m1Value">10+ yrs</div>
-					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m1Label">Professional software development</div>
+				<div class="site-card rounded-2xl border p-4">
+					<div class="text-2xl font-semibold site-heading" data-i18n="metrics.m1Value"></div>
+					<div class="mt-1 text-sm site-muted" data-i18n="metrics.m1Label"></div>
 				</div>
-				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m2Value">Node.js</div>
-					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m2Label">APIs, jobs, integrations</div>
+				<div class="site-card rounded-2xl border p-4">
+					<div class="text-2xl font-semibold site-heading" data-i18n="metrics.m2Value"></div>
+					<div class="mt-1 text-sm site-muted" data-i18n="metrics.m2Label"></div>
 				</div>
-				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m3Value">Flutter</div>
-					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m3Label">Mobile apps & UI systems</div>
+				<div class="site-card rounded-2xl border p-4">
+					<div class="text-2xl font-semibold site-heading" data-i18n="metrics.m3Value"></div>
+					<div class="mt-1 text-sm site-muted" data-i18n="metrics.m3Label"></div>
 				</div>
-				<div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-					<div class="text-2xl font-semibold text-white" data-i18n="metrics.m4Value">AWS</div>
-					<div class="mt-1 text-sm text-slate-200" data-i18n="metrics.m4Label">Lambda, Kubernetes, DynamoDB</div>
-				</div>
-			</section>
-
-			<section id="about" class="mt-14 scroll-mt-24">
-				<div class="flex items-end justify-between gap-6">
-					<div>
-						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="about.title">About</h2>
-						<p class="mt-2 max-w-2xl text-slate-200" data-i18n="about.subtitle">A pragmatic builder focused on reliability, clean UX, and shipping.</p>
-					</div>
-				</div>
-
-				<div class="mt-6 grid gap-4 md:grid-cols-3">
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5 md:col-span-2">
-						<p class="text-slate-200" data-i18n="about.p1">
-							I’m a full‑stack developer with a UNICAH computing degree. I grew up shipping PHP/MySQL systems at UNAH and BlueLion Soft, built .NET MVC solutions for regional banks with SyTCorp, spent several years on GreenPay’s payment gateway and e‑commerce stack, and now focus on backend development with Node.js, Strapi, and AWS at Lynx Labs—plus Flutter for delivery and mobile products.
-						</p>
-						<p class="mt-4 text-slate-200" data-i18n="about.p2">
-							I’ve delivered payment platforms, Balanced Scorecard and scheduling systems for BAC Credomatic, teaching‑evaluation portals, farm and watershed management tools, ERP‑style workflows, and long‑running freelance platforms—always prioritizing performance, security, and maintainability.
-						</p>
-						<p class="mt-3 text-xs text-slate-400" data-i18n="about.legalName">Legal name: Jairo Emilio Bonilla Cálix.</p>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="about.highlightsTitle">Highlights</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="about.h1">REST APIs, serverless workloads, third‑party integrations</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="about.h2">PostgreSQL, MySQL, SQL Server</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="about.h3">AWS Lambda, API Gateway, Kubernetes, CloudWatch</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span><span data-i18n="about.h4">Flutter, React, Angular (incl. AngularJS)</span></li>
-						</ul>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5 md:col-span-1">
-						<div class="text-sm font-semibold text-white" data-i18n="about.eduTitle">Education</div>
-						<p class="mt-3 text-sm text-slate-200" data-i18n="about.eduBody">2010–2013 · Catholic University of Honduras (UNICAH) — Computing Science Engineer.</p>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5 md:col-span-2">
-						<div class="text-sm font-semibold text-white" data-i18n="about.langTitle">Languages</div>
-						<p class="mt-3 text-sm text-slate-200" data-i18n="about.langBody">English — diploma, Catholic University of Honduras (UNICAH).</p>
-						<p class="mt-3 text-xs text-slate-400" data-i18n="about.learningLine">Ongoing learning across AWS, Flutter, Python, Scrum, and modern web stacks (Udemy and similar).</p>
-					</div>
+				<div class="site-card rounded-2xl border p-4">
+					<div class="text-2xl font-semibold site-heading" data-i18n="metrics.m4Value"></div>
+					<div class="mt-1 text-sm site-muted" data-i18n="metrics.m4Label"></div>
 				</div>
 			</section>
 
-			<section id="projects" class="mt-14 scroll-mt-24">
-				<div class="flex items-end justify-between gap-6">
-					<div>
-						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="projects.title">Featured projects</h2>
-						<p class="mt-2 max-w-2xl text-slate-200" data-i18n="projects.subtitle">Examples aligned with my professional experience.</p>
-					</div>
-				</div>
-
-				<div class="mt-6 grid gap-4 md:grid-cols-2">
-					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex items-start justify-between gap-4">
-							<h3 class="text-lg font-semibold text-white" data-i18n="projects.lxTitle">Lynx Labs — backend & Strapi</h3>
-							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.lxTag">Backend</span>
-						</div>
-						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.lxDesc">
-							Backend development with Node.js and Strapi CMS on AWS, including serverless services and Kubernetes where needed.
-						</p>
-						<ul class="mt-4 flex flex-wrap gap-2">
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Strapi</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AWS</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Kubernetes</li>
-						</ul>
-						<ul class="mt-4 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="projects.lxBullet1">AWS: Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="projects.lxBullet2">JavaScript and PostgreSQL alongside Strapi-driven content APIs</span></li>
-						</ul>
-					</article>
-
-					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex items-start justify-between gap-4">
-							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p1Title">GreenPay — payment gateway & e‑commerce</h3>
-							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p1Tag">Full‑stack</span>
-						</div>
-						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p1Desc">
-							Payment gateway and e‑commerce platform with an admin panel for transactions, configuration, and operations visibility.
-						</p>
-						<ul class="mt-4 flex flex-wrap gap-2">
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">TypeScript</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">React</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Angular</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AngularJS</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AWS Lambda</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Serverless</li>
-						</ul>
-						<ul class="mt-4 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="projects.p1Bullet1">APIs and data model for payment events, users, and integrations</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="projects.p1Bullet2">Serverless AWS deployment with monitoring (Lambda, DynamoDB, API Gateway, S3, CloudWatch)</span></li>
-						</ul>
-					</article>
-
-					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex items-start justify-between gap-4">
-							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p2Title">Balanced Scorecard — BAC Credomatic (Panama)</h3>
-							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p2Tag">Enterprise</span>
-						</div>
-						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p2Desc">
-							Balanced Scorecard web system for BAC Credomatic Panama, delivered while at SyTCorp (Tegucigalpa).
-						</p>
-						<ul class="mt-4 flex flex-wrap gap-2">
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">C#</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">ASP.NET MVC</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">SQL Server</li>
-						</ul>
-						<ul class="mt-4 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="projects.p2Bullet1">Full stack C#, ASP.NET MVC, and SQL Server implementation</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="projects.p2Bullet2">Focused on reliable reporting and bank stakeholder workflows</span></li>
-						</ul>
-					</article>
-
-					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex items-start justify-between gap-4">
-							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p3Title">Farm management — B&W Farming & PNCG</h3>
-							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p3Tag">Web</span>
-						</div>
-						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p3Desc">
-							Web systems for plantation and watershed programs (B&W Farming, Proyecto Nuestra Cuenca Goascorán), including inventory, applications, and monitoring.
-						</p>
-						<ul class="mt-4 flex flex-wrap gap-2">
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PHP</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JavaScript</li>
-						</ul>
-					</article>
-
-					<article class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex items-start justify-between gap-4">
-							<h3 class="text-lg font-semibold text-white" data-i18n="projects.p4Title">Teaching evaluation — UPNFM & UNAH</h3>
-							<span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200" data-i18n="projects.p4Tag">Public sector</span>
-						</div>
-						<p class="mt-2 text-sm text-slate-200" data-i18n="projects.p4Desc">
-							Performance evaluation platforms for university teaching staff, plus multiple administrative systems and the Shopish WordPress store at BlueLion Soft.
-						</p>
-						<ul class="mt-4 flex flex-wrap gap-2">
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PHP</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">WordPress</li>
-							<li class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JavaScript</li>
-						</ul>
-					</article>
-				</div>
-			</section>
-
-			<section id="skills" class="mt-14 scroll-mt-24">
-				<div>
-					<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="skills.title">Skills</h2>
-					<p class="mt-2 max-w-2xl text-slate-200" data-i18n="skills.subtitle">Grouped by what I use to ship complete products.</p>
-				</div>
-
-				<div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="skills.backendTitle">Backend</div>
-						<div class="mt-3 flex flex-wrap gap-2">
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Node.js</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Express</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PHP</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Laravel</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Yii</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">C# / .NET</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">REST</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JWT</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Strapi</span>
-						</div>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="skills.frontendTitle">Frontend</div>
-						<div class="mt-3 flex flex-wrap gap-2">
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">React</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Angular</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AngularJS</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">TypeScript</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">JavaScript</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">jQuery</span>
-						</div>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="skills.mobileTitle">Mobile</div>
-						<div class="mt-3 flex flex-wrap gap-2">
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Flutter</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Dart</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">UI systems</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">State mgmt</span>
-						</div>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="skills.cloudTitle">Cloud</div>
-						<div class="mt-3 flex flex-wrap gap-2">
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">AWS Lambda</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">API Gateway</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">S3</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">EC2</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">CloudWatch</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">DynamoDB</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Kubernetes</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">Serverless</span>
-						</div>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="text-sm font-semibold text-white" data-i18n="skills.dataTitle">Data</div>
-						<div class="mt-3 flex flex-wrap gap-2">
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">PostgreSQL</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">MySQL</span>
-							<span class="rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200">SQL Server</span>
-						</div>
-					</div>
-				</div>
-			</section>
-
+			<!-- Experience (numbered timeline) -->
 			<section id="experience" class="mt-14 scroll-mt-24">
 				<div>
-					<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="exp.title">Experience</h2>
-					<p class="mt-2 max-w-2xl text-slate-200" data-i18n="exp.subtitle">A concise timeline from my CV.</p>
+					<h2 class="text-2xl font-semibold tracking-tight site-heading md:text-3xl" data-i18n="exp.title">Work experience</h2>
+					<p class="mt-2 max-w-2xl site-muted" data-i18n="exp.subtitle"></p>
+				</div>
+				<ol class="mt-6 space-y-4">
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">1</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e1Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e1Role"></div>
+								</div>
+								<div class="text-xs site-subtle" data-i18n="exp.e1When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1B1"></span></li>
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1B2"></span></li>
+							</ul>
+						</div>
+					</li>
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">2</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e2Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e2Role"></div>
+								</div>
+								<div class="text-xs site-subtle" data-i18n="exp.e2When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e2B1"></span></li>
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e2B2"></span></li>
+							</ul>
+						</div>
+					</li>
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">3</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e3Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e3Role"></div>
+								</div>
+								<div class="text-xs site-subtle" data-i18n="exp.e3When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="exp.e3B1"></span></li>
+							</ul>
+						</div>
+					</li>
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">4</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e4Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e4Role"></div>
+								</div>
+								<div class="text-xs site-subtle text-right" data-i18n="exp.e4When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="exp.e4B1"></span></li>
+							</ul>
+						</div>
+					</li>
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">5</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e5Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e5Role"></div>
+								</div>
+								<div class="text-xs site-subtle text-right" data-i18n="exp.e5When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="exp.e5B1"></span></li>
+							</ul>
+						</div>
+					</li>
+					<li class="site-card flex gap-4 rounded-2xl border p-5">
+						<span class="exp-number" aria-hidden="true">6</span>
+						<div class="min-w-0 flex-1">
+							<div class="flex flex-wrap items-start justify-between gap-2">
+								<div>
+									<div class="text-base font-semibold site-heading" data-i18n="exp.e6Company"></div>
+									<div class="text-sm site-muted" data-i18n="exp.e6Role"></div>
+								</div>
+								<div class="text-xs site-subtle text-right" data-i18n="exp.e6When"></div>
+							</div>
+							<ul class="mt-3 space-y-2 text-sm site-muted">
+								<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span><span data-i18n="exp.e6B1"></span></li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+			</section>
+
+			<!-- JEB Studios Apps -->
+			<section id="apps" class="mt-14 scroll-mt-24">
+				<div class="flex flex-wrap items-end justify-between gap-4">
+					<div>
+						<h2 class="text-2xl font-semibold tracking-tight site-heading md:text-3xl" data-i18n="apps.title">JEB Studios apps</h2>
+						<p class="mt-2 max-w-2xl site-muted" data-i18n="apps.subtitle"></p>
+					</div>
+					<a href="https://play.google.com/store/apps/developer?id=JEB+Studio" target="_blank" rel="noopener noreferrer"
+						class="text-sm font-semibold text-violet-400 hover:text-violet-300 focus:outline-none focus:ring-2 focus:ring-violet-400/60 rounded-lg px-2 py-1"
+						data-i18n="apps.developerLink">All apps on Google Play</a>
 				</div>
 
-				<div class="mt-6 grid gap-4">
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e1Company">Lynx Labs</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e1Role">Backend Developer</div>
+				<div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/pocket-studio.png" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">Pocket Studio</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.pocketStudio"></p>
 							</div>
-							<div class="text-xs text-slate-300" data-i18n="exp.e1When">Jun 2025 – present</div>
 						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1B1">Backend with Node.js and Strapi CMS.</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e1B2">AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes), JavaScript, PostgreSQL.</span></li>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+						</div>
+						<div class="mt-4 mt-auto flex flex-wrap gap-2 pt-2">
+							<a href="./apps/pocket-studio.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.jebstudios.pocketstudio" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/earth-defender.png" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">Earth Defender</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.earthDefender"></p>
+							</div>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">AdMob</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a href="./apps/earth-defender.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.jebstudios.earth_defender" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/mastermind-football.png" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">Mastermind Football</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.mastermindFootball"></p>
+							</div>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">AdMob</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a href="./apps/mastermind-football.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.jebstudios.mastermind_football" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/smart-utilities.png" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">JEB Smart Utilities</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.smartUtilities"></p>
+							</div>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a href="./apps/smart-utilities.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.jebstudios.smart_utilities" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/smart-iptv.png" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">Smart IPTV</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.smartIptv"></p>
+							</div>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">AdMob</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a href="./apps/smart-iptv.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.JEBStudios.smartiptv" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+
+					<article class="site-card flex flex-col rounded-2xl border p-5">
+						<div class="flex items-start gap-4">
+							<img src="./images/apps/glowpulse.svg" alt="" class="app-card-img" width="64" height="64" />
+							<div class="min-w-0">
+								<h3 class="font-semibold site-heading">GlowPulse</h3>
+								<p class="mt-1 text-sm site-muted" data-i18n="apps.card.glowpulse"></p>
+							</div>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Flutter</span>
+							<span class="site-pill-wrap rounded-full px-2.5 py-0.5 text-xs site-muted">Offline</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							<a href="./apps/glowpulse.html" class="inline-flex rounded-xl bg-violet-500 px-3 py-2 text-xs font-semibold text-white hover:bg-violet-400" data-i18n="apps.details">Details</a>
+							<a href="https://play.google.com/store/apps/details?id=com.jebstudios.glowpulse" target="_blank" rel="noopener noreferrer" class="site-card site-heading inline-flex rounded-xl border px-3 py-2 text-xs font-semibold" data-i18n="apps.play">Play</a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<!-- Professional Projects -->
+			<section id="projects" class="mt-14 scroll-mt-24">
+				<div>
+					<h2 class="text-2xl font-semibold tracking-tight site-heading md:text-3xl" data-i18n="projects.title">Professional projects</h2>
+					<p class="mt-2 max-w-2xl site-muted" data-i18n="projects.subtitle"></p>
+				</div>
+				<div class="mt-6 grid gap-4 md:grid-cols-2">
+					<article class="site-card rounded-2xl border p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold site-heading" data-i18n="projects.lxTitle"></h3>
+							<span class="site-pill-wrap rounded-full border px-2.5 py-1 text-xs site-muted" data-i18n="projects.lxTag"></span>
+						</div>
+						<p class="mt-2 text-sm site-muted" data-i18n="projects.lxDesc"></p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">Node.js</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">Strapi</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">AWS</li>
+						</ul>
+					</article>
+					<article class="site-card rounded-2xl border p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold site-heading" data-i18n="projects.p1Title"></h3>
+							<span class="site-pill-wrap rounded-full border px-2.5 py-1 text-xs site-muted" data-i18n="projects.p1Tag"></span>
+						</div>
+						<p class="mt-2 text-sm site-muted" data-i18n="projects.p1Desc"></p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">Node.js</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">React</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">AWS</li>
+						</ul>
+					</article>
+					<article class="site-card rounded-2xl border p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold site-heading" data-i18n="projects.p2Title"></h3>
+							<span class="site-pill-wrap rounded-full border px-2.5 py-1 text-xs site-muted" data-i18n="projects.p2Tag"></span>
+						</div>
+						<p class="mt-2 text-sm site-muted" data-i18n="projects.p2Desc"></p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">C#</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">ASP.NET MVC</li>
+						</ul>
+					</article>
+					<article class="site-card rounded-2xl border p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold site-heading" data-i18n="projects.p3Title"></h3>
+							<span class="site-pill-wrap rounded-full border px-2.5 py-1 text-xs site-muted" data-i18n="projects.p3Tag"></span>
+						</div>
+						<p class="mt-2 text-sm site-muted" data-i18n="projects.p3Desc"></p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">PHP</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">MySQL</li>
+						</ul>
+					</article>
+					<article class="site-card rounded-2xl border p-5">
+						<div class="flex items-start justify-between gap-4">
+							<h3 class="text-lg font-semibold site-heading" data-i18n="projects.p4Title"></h3>
+							<span class="site-pill-wrap rounded-full border px-2.5 py-1 text-xs site-muted" data-i18n="projects.p4Tag"></span>
+						</div>
+						<p class="mt-2 text-sm site-muted" data-i18n="projects.p4Desc"></p>
+						<ul class="mt-4 flex flex-wrap gap-2">
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">PHP</li>
+							<li class="site-pill-wrap rounded-full px-3 py-1 text-xs site-muted">WordPress</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<!-- About (skills merged) -->
+			<section id="about" class="mt-14 scroll-mt-24">
+				<div>
+					<h2 class="text-2xl font-semibold tracking-tight site-heading md:text-3xl" data-i18n="about.title">About me</h2>
+					<p class="mt-2 max-w-2xl site-muted" data-i18n="about.subtitle"></p>
+				</div>
+				<div class="mt-6 grid gap-4 md:grid-cols-3">
+					<div class="site-card rounded-2xl border p-5 md:col-span-2">
+						<p class="site-muted" data-i18n="about.p1"></p>
+						<p class="mt-4 site-muted" data-i18n="about.p2"></p>
+						<p class="mt-3 text-xs site-subtle" data-i18n="about.legalName"></p>
+					</div>
+					<div class="site-card rounded-2xl border p-5">
+						<div class="text-sm font-semibold site-heading" data-i18n="about.highlightsTitle"></div>
+						<ul class="mt-3 space-y-2 text-sm site-muted">
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="about.h1"></span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="about.h2"></span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="about.h3"></span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span><span data-i18n="about.h4"></span></li>
+							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="about.h5"></span></li>
 						</ul>
 					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e2Company">GreenPay</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e2Role">Full Stack Developer</div>
-							</div>
-							<div class="text-xs text-slate-300" data-i18n="exp.e2When">Nov 2021 – Dec 2025</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e2B1">Payment gateway and e‑commerce platform with a dashboard for transactions and configuration.</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e2B2">AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch), Node.js, React, Angular, AngularJS, JavaScript, TypeScript, serverless, PostgreSQL.</span></li>
-						</ul>
+					<div class="site-card rounded-2xl border p-5">
+						<div class="text-sm font-semibold site-heading" data-i18n="about.eduTitle"></div>
+						<p class="mt-3 text-sm site-muted" data-i18n="about.eduBody"></p>
 					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e3Company">BlueLion Soft</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e3Role">Web Developer</div>
-							</div>
-							<div class="text-xs text-slate-300" data-i18n="exp.e3When">2016 – 2021 · Honduras</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400"></span><span data-i18n="exp.e3B1">Teaching performance evaluation systems (UPNFM, UNAH); Lion Farming; B&W Farming; Shopish e‑commerce; PNCG watershed project; multiple administrative systems.</span></li>
-						</ul>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e4Company">SyTCorp</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e4Role">Full Stack C# ASP.NET MVC Developer</div>
-							</div>
-							<div class="text-xs text-slate-300 text-right" data-i18n="exp.e4When">Aug 2020 – Oct 2020 · Tegucigalpa</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="exp.e4B1">Balanced Scorecard system for BAC Credomatic (Panama).</span></li>
-						</ul>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e5Company">SyTCorp</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e5Role">Consultant</div>
-							</div>
-							<div class="text-xs text-slate-300 text-right" data-i18n="exp.e5When">Jun 2017 – Jan 2018 · Tegucigalpa</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-400"></span><span data-i18n="exp.e5B1">Appointment scheduling system for BAC Credomatic (Panama).</span></li>
-						</ul>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e6Company">UNAH</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e6Role">Web Developer</div>
-							</div>
-							<div class="text-xs text-slate-300 text-right" data-i18n="exp.e6When">Sep 2014 – Apr 2017 · Tegucigalpa</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-300"></span><span data-i18n="exp.e6B1">Documentation control, consultant registry, researcher catalog, congress registration, and planning modules.</span></li>
-						</ul>
-					</div>
-					<div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-						<div class="flex flex-wrap items-start justify-between gap-2">
-							<div>
-								<div class="text-base font-semibold text-white" data-i18n="exp.e7Company">Independent consultant</div>
-								<div class="text-sm text-slate-200" data-i18n="exp.e7Role">Web Developer</div>
-							</div>
-							<div class="text-xs text-slate-300 text-right" data-i18n="exp.e7When">Oct 2013 – present · Honduras</div>
-						</div>
-						<ul class="mt-3 space-y-2 text-sm text-slate-200">
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e7B1">Delivery API with Node.js (JWT, profiles and access); clinical lab LBS; SISOCS for SOPTRAVI; Aroma Café; Red COMAL.</span></li>
-							<li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400"></span><span data-i18n="exp.e7B2">Websites for CYBIMEX, CYBIMEX Cargo, and Smart BIZ HN.</span></li>
-						</ul>
+					<div class="site-card rounded-2xl border p-5 md:col-span-2">
+						<div class="text-sm font-semibold site-heading" data-i18n="about.langTitle"></div>
+						<p class="mt-3 text-sm site-muted" data-i18n="about.langBody"></p>
+						<p class="mt-3 text-xs site-subtle" data-i18n="about.learningLine"></p>
 					</div>
 				</div>
 			</section>
 
+			<!-- Contact -->
 			<section id="contact" class="mt-14 scroll-mt-24">
 				<div class="grid gap-8 md:grid-cols-12 md:items-start">
 					<div class="md:col-span-5">
-						<h2 class="text-2xl font-semibold tracking-tight text-white md:text-3xl" data-i18n="contact.title">Contact</h2>
-						<p class="mt-2 text-slate-200" data-i18n="contact.subtitle">
-							Tell me about your project. I’ll reply with next steps and a realistic estimate.
-						</p>
-						<p class="mt-3 text-sm text-slate-300" data-i18n="contact.locationLine">Comayagua, Honduras</p>
-
-						<div class="mt-5 flex flex-col gap-2 text-sm text-slate-200">
-							<a href="mailto:jebcalix@gmail.com"
-								class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 font-semibold text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								data-i18n="contact.emailCta">
-								Email: jebcalix@gmail.com
-							</a>
-							<a href="tel:+50433272174"
-								class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 font-semibold text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-								data-i18n="contact.phoneCta">
-								+504 3327‑2174
-							</a>
+						<h2 class="text-2xl font-semibold tracking-tight site-heading md:text-3xl" data-i18n="contact.title">Contact</h2>
+						<p class="mt-2 site-muted" data-i18n="contact.subtitle"></p>
+						<p class="mt-3 text-sm site-subtle" data-i18n="contact.locationLine"></p>
+						<div class="mt-5 flex flex-col gap-2 text-sm">
+							<a href="mailto:jebcalix@gmail.com" class="site-card site-heading inline-flex items-center justify-center rounded-xl border px-4 py-2.5 font-semibold hover:opacity-90" data-i18n="contact.emailCta"></a>
+							<a href="tel:+50433272174" class="site-card site-heading inline-flex items-center justify-center rounded-xl border px-4 py-2.5 font-semibold hover:opacity-90" data-i18n="contact.phoneCta"></a>
 						</div>
 					</div>
-
 					<div class="md:col-span-7">
-						<form class="rounded-2xl border border-white/10 bg-white/5 p-5"
-							action="mailto:jebcalix@gmail.com" method="post" enctype="text/plain">
+						<form class="site-card rounded-2xl border p-5" action="mailto:jebcalix@gmail.com" method="post" enctype="text/plain">
 							<div class="grid gap-4 md:grid-cols-2">
-								<div class="md:col-span-1">
-									<label for="name" class="text-sm font-semibold text-white" data-i18n="contact.nameLabel">Name</label>
-									<input type="text" id="name" name="name" required
-										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-										data-i18n-placeholder="contact.namePlaceholder" placeholder="Your name" />
+								<div>
+									<label for="name" class="text-sm font-semibold site-heading" data-i18n="contact.nameLabel">Name</label>
+									<input type="text" id="name" name="name" required class="site-input mt-2 w-full rounded-xl border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n-placeholder="contact.namePlaceholder" />
 								</div>
-								<div class="md:col-span-1">
-									<label for="email" class="text-sm font-semibold text-white" data-i18n="contact.emailLabel">Email</label>
-									<input type="email" id="email" name="email" required
-										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-										data-i18n-placeholder="contact.emailPlaceholder" placeholder="you@example.com" />
+								<div>
+									<label for="email" class="text-sm font-semibold site-heading" data-i18n="contact.emailLabel">Email</label>
+									<input type="email" id="email" name="email" required class="site-input mt-2 w-full rounded-xl border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n-placeholder="contact.emailPlaceholder" />
 								</div>
 								<div class="md:col-span-2">
-									<label for="message" class="text-sm font-semibold text-white" data-i18n="contact.messageLabel">Message</label>
-									<textarea id="message" name="message" required rows="5"
-										class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-										data-i18n-placeholder="contact.messagePlaceholder"
-										placeholder="What are you building, and what’s your timeline?"></textarea>
+									<label for="message" class="text-sm font-semibold site-heading" data-i18n="contact.messageLabel">Message</label>
+									<textarea id="message" name="message" required rows="5" class="site-input mt-2 w-full rounded-xl border px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n-placeholder="contact.messagePlaceholder"></textarea>
 								</div>
 							</div>
 							<div class="mt-4 flex items-center justify-between gap-3">
-								<p class="text-xs text-slate-300" data-i18n="contact.note">This form opens your email client (no backend required).</p>
-								<button type="submit"
-									class="inline-flex items-center justify-center rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-violet-500/20 hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
-									data-i18n="contact.submit">
-									Send
-								</button>
+								<p class="text-xs site-subtle" data-i18n="contact.note"></p>
+								<button type="submit" class="inline-flex rounded-xl bg-violet-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60" data-i18n="contact.submit">Send</button>
 							</div>
 						</form>
 					</div>
@@ -576,8 +536,8 @@
 			</section>
 		</main>
 
-		<footer class="border-t border-white/10 py-10">
-			<div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 text-sm text-slate-300 md:flex-row md:items-center md:justify-between md:px-6">
+		<footer class="site-header border-t py-10">
+			<div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 text-sm site-subtle md:flex-row md:items-center md:justify-between md:px-6">
 				<p>
 					<span>&copy;</span>
 					<span id="year">2026</span>
@@ -585,23 +545,23 @@
 				</p>
 				<div class="flex flex-wrap items-center gap-2">
 					<a href="./earth-defender-privacy-policy.html" target="_blank" rel="noopener noreferrer"
-						class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60">
+						class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm font-semibold">
 						Earth Defender Privacy Policy
 					</a>
 					<a href="./mastermind-football-privacy-policy.html" target="_blank" rel="noopener noreferrer"
-						class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60">
+						class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm font-semibold">
 						Mastermind Football Privacy Policy
 					</a>
 					<a href="./pocket-studio-privacy-policy.html" target="_blank" rel="noopener noreferrer"
-						class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60">
+						class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm font-semibold">
 						Pocket Studio Privacy Policy
 					</a>
 					<a href="./glowpulse-privacy-policy.html" target="_blank" rel="noopener noreferrer"
-						class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60">
+						class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm font-semibold">
 						GlowPulse Privacy Policy
 					</a>
 					<a href="./advertising-policy.html" target="_blank" rel="noopener noreferrer"
-						class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						class="site-nav-link site-muted rounded-xl px-3 py-2 text-sm font-semibold"
 						data-i18n="footer.policy">
 						Smart IPTV Advertising Policy
 					</a>
@@ -610,346 +570,10 @@
 		</footer>
 	</div>
 
-	<script>
-		(() => {
-			const STORAGE_KEY = "jb_lang";
-			const SUPPORTED = ["en", "es"];
-
-			const dict = {
-				en: {
-					"nav.name": "Jairo Bonilla",
-					"nav.role": "Backend & Full‑Stack Developer",
-					"nav.about": "About",
-					"nav.projects": "Projects",
-					"nav.skills": "Skills",
-					"nav.experience": "Experience",
-					"nav.contact": "Contact",
-					"nav.language": "Language",
-					"hero.badge": "Available for freelance & remote",
-					"hero.h1a": "Backend & full‑stack engineer",
-					"hero.h1b": "building web & mobile products",
-					"hero.summary": "At Lynx Labs I build backend services with Node.js and Strapi on AWS (including Kubernetes). Previously at GreenPay I shipped a payment gateway and e‑commerce platform—Node.js, TypeScript, React, Angular, serverless AWS, and PostgreSQL. I also deliver mobile and integration work with Flutter when projects need it.",
-					"hero.ctaPrimary": "View projects",
-					"hero.ctaSecondary": "Contact me",
-					"hero.cardRole": "Backend · Node · Strapi · React/Angular · Flutter",
-					"hero.cardFocus1Label": "Focus",
-					"hero.cardFocus1Value": "Backend, Strapi & AWS",
-					"hero.cardFocus2Label": "Also",
-					"hero.cardFocus2Value": "Flutter & legacy PHP/.NET",
-					"metrics.m1Value": "10+ yrs",
-					"metrics.m1Label": "Professional software development",
-					"metrics.m2Value": "Node.js",
-					"metrics.m2Label": "APIs, jobs, integrations",
-					"metrics.m3Value": "Flutter",
-					"metrics.m3Label": "Mobile apps & UI systems",
-					"metrics.m4Value": "AWS",
-					"metrics.m4Label": "Lambda, Kubernetes, DynamoDB",
-					"about.title": "About",
-					"about.subtitle": "A pragmatic builder focused on reliability, clean UX, and shipping.",
-					"about.p1": "I’m a full‑stack developer with a UNICAH computing degree. I grew up shipping PHP/MySQL systems at UNAH and BlueLion Soft, built .NET MVC solutions for regional banks with SyTCorp, spent several years on GreenPay’s payment gateway and e‑commerce stack, and now focus on backend development with Node.js, Strapi, and AWS at Lynx Labs—plus Flutter for delivery and mobile products.",
-					"about.p2": "I’ve delivered payment platforms, Balanced Scorecard and scheduling systems for BAC Credomatic, teaching‑evaluation portals, farm and watershed management tools, ERP‑style workflows, and long‑running freelance platforms—always prioritizing performance, security, and maintainability.",
-					"about.legalName": "Legal name: Jairo Emilio Bonilla Cálix.",
-					"about.highlightsTitle": "Highlights",
-					"about.h1": "REST APIs, serverless workloads, third‑party integrations",
-					"about.h2": "PostgreSQL, MySQL, SQL Server",
-					"about.h3": "AWS Lambda, API Gateway, Kubernetes, CloudWatch",
-					"about.h4": "Flutter, React, Angular (incl. AngularJS)",
-					"about.eduTitle": "Education",
-					"about.eduBody": "2010–2013 · Catholic University of Honduras (UNICAH) — Computing Science Engineer.",
-					"about.langTitle": "Languages",
-					"about.langBody": "English — diploma, Catholic University of Honduras (UNICAH).",
-					"about.learningLine": "Ongoing learning across AWS, Flutter, Python, Scrum, and modern web stacks (Udemy and similar).",
-					"projects.title": "Featured projects",
-					"projects.subtitle": "Examples aligned with my professional experience.",
-					"projects.lxTitle": "Lynx Labs — backend & Strapi",
-					"projects.lxTag": "Backend",
-					"projects.lxDesc": "Backend development with Node.js and Strapi CMS on AWS, including serverless services and Kubernetes where needed.",
-					"projects.lxBullet1": "AWS: Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes",
-					"projects.lxBullet2": "JavaScript and PostgreSQL alongside Strapi-driven content APIs",
-					"projects.p1Title": "GreenPay — payment gateway & e‑commerce",
-					"projects.p1Tag": "Full‑stack",
-					"projects.p1Desc": "Payment gateway and e‑commerce platform with an admin panel for transactions, configuration, and operations visibility.",
-					"projects.p1Bullet1": "APIs and data model for payment events, users, and integrations",
-					"projects.p1Bullet2": "Serverless AWS deployment with monitoring (Lambda, DynamoDB, API Gateway, S3, CloudWatch)",
-					"projects.p2Title": "Balanced Scorecard — BAC Credomatic (Panama)",
-					"projects.p2Tag": "Enterprise",
-					"projects.p2Desc": "Balanced Scorecard web system for BAC Credomatic Panama, delivered while at SyTCorp (Tegucigalpa).",
-					"projects.p2Bullet1": "Full stack C#, ASP.NET MVC, and SQL Server implementation",
-					"projects.p2Bullet2": "Focused on reliable reporting and bank stakeholder workflows",
-					"projects.p3Title": "Farm management — B&W Farming & PNCG",
-					"projects.p3Tag": "Web",
-					"projects.p3Desc": "Web systems for plantation and watershed programs (B&W Farming, Proyecto Nuestra Cuenca Goascorán), including inventory, applications, and monitoring.",
-					"projects.p4Title": "Teaching evaluation — UPNFM & UNAH",
-					"projects.p4Tag": "Public sector",
-					"projects.p4Desc": "Performance evaluation platforms for university teaching staff, plus multiple administrative systems and the Shopish WordPress store at BlueLion Soft.",
-					"skills.title": "Skills",
-					"skills.subtitle": "Grouped by what I use to ship complete products.",
-					"skills.backendTitle": "Backend",
-					"skills.frontendTitle": "Frontend",
-					"skills.mobileTitle": "Mobile",
-					"skills.cloudTitle": "Cloud",
-					"skills.dataTitle": "Data",
-					"exp.title": "Experience",
-					"exp.subtitle": "A concise timeline from my CV.",
-					"exp.e1Company": "Lynx Labs",
-					"exp.e1Role": "Backend Developer",
-					"exp.e1When": "Jun 2025 – present",
-					"exp.e1B1": "Backend with Node.js and Strapi CMS.",
-					"exp.e1B2": "AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes), JavaScript, PostgreSQL.",
-					"exp.e2Company": "GreenPay",
-					"exp.e2Role": "Full Stack Developer",
-					"exp.e2When": "Nov 2021 – Dec 2025",
-					"exp.e2B1": "Payment gateway and e‑commerce platform with a dashboard for transactions and configuration.",
-					"exp.e2B2": "AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch), Node.js, React, Angular, AngularJS, JavaScript, TypeScript, serverless, PostgreSQL.",
-					"exp.e3Company": "BlueLion Soft",
-					"exp.e3Role": "Web Developer",
-					"exp.e3When": "2016 – 2021 · Honduras",
-					"exp.e3B1": "Teaching performance evaluation systems (UPNFM, UNAH); Lion Farming; B&W Farming; Shopish e‑commerce; PNCG watershed project; multiple administrative systems.",
-					"exp.e4Company": "SyTCorp",
-					"exp.e4Role": "Full Stack C# ASP.NET MVC Developer",
-					"exp.e4When": "Aug 2020 – Oct 2020 · Tegucigalpa",
-					"exp.e4B1": "Balanced Scorecard system for BAC Credomatic (Panama).",
-					"exp.e5Company": "SyTCorp",
-					"exp.e5Role": "Consultant",
-					"exp.e5When": "Jun 2017 – Jan 2018 · Tegucigalpa",
-					"exp.e5B1": "Appointment scheduling system for BAC Credomatic (Panama).",
-					"exp.e6Company": "UNAH",
-					"exp.e6Role": "Web Developer",
-					"exp.e6When": "Sep 2014 – Apr 2017 · Tegucigalpa",
-					"exp.e6B1": "Documentation control, consultant registry, researcher catalog, congress registration, and planning modules.",
-					"exp.e7Company": "Independent consultant",
-					"exp.e7Role": "Web Developer",
-					"exp.e7When": "Oct 2013 – present · Honduras",
-					"exp.e7B1": "Delivery API with Node.js (JWT, profiles and access); clinical lab LBS; SISOCS for SOPTRAVI; Aroma Café; Red COMAL.",
-					"exp.e7B2": "Websites for CYBIMEX, CYBIMEX Cargo, and Smart BIZ HN.",
-					"contact.title": "Contact",
-					"contact.subtitle": "Tell me about your project. I’ll reply with next steps and a realistic estimate.",
-					"contact.locationLine": "Comayagua, Honduras",
-					"contact.emailCta": "Email: jebcalix@gmail.com",
-					"contact.phoneCta": "+504 3327‑2174",
-					"contact.nameLabel": "Name",
-					"contact.namePlaceholder": "Your name",
-					"contact.emailLabel": "Email",
-					"contact.emailPlaceholder": "you@example.com",
-					"contact.messageLabel": "Message",
-					"contact.messagePlaceholder": "What are you building, and what’s your timeline?",
-					"contact.note": "This form opens your email client (no backend required).",
-					"contact.submit": "Send",
-					"footer.rights": " Jairo Bonilla. All rights reserved.",
-					"footer.policy": "Smart IPTV Advertising Policy",
-				},
-				es: {
-					"nav.name": "Jairo Bonilla",
-					"nav.role": "Desarrollador Backend & Full‑Stack",
-					"nav.about": "Acerca de",
-					"nav.projects": "Proyectos",
-					"nav.skills": "Habilidades",
-					"nav.experience": "Experiencia",
-					"nav.contact": "Contacto",
-					"nav.language": "Idioma",
-					"hero.badge": "Disponible para freelance y remoto",
-					"hero.h1a": "Ingeniero backend & full‑stack",
-					"hero.h1b": "para productos web y móviles",
-					"hero.summary": "En Lynx Labs desarrollo backend con Node.js y Strapi en AWS (incluye Kubernetes). Antes en GreenPay construí una pasarela de pago y plataforma e‑commerce—Node.js, TypeScript, React, Angular, AWS serverless y PostgreSQL. También entrego trabajo móvil e integraciones con Flutter cuando el proyecto lo requiere.",
-					"hero.ctaPrimary": "Ver proyectos",
-					"hero.ctaSecondary": "Contáctame",
-					"hero.cardRole": "Backend · Node · Strapi · React/Angular · Flutter",
-					"hero.cardFocus1Label": "Enfoque",
-					"hero.cardFocus1Value": "Backend, Strapi y AWS",
-					"hero.cardFocus2Label": "También",
-					"hero.cardFocus2Value": "Flutter y PHP/.NET legado",
-					"metrics.m1Value": "10+ años",
-					"metrics.m1Label": "Desarrollo profesional de software",
-					"metrics.m2Value": "Node.js",
-					"metrics.m2Label": "APIs, jobs, integraciones",
-					"metrics.m3Value": "Flutter",
-					"metrics.m3Label": "Apps móviles y sistemas de UI",
-					"metrics.m4Value": "AWS",
-					"metrics.m4Label": "Lambda, Kubernetes, DynamoDB",
-					"about.title": "Acerca de",
-					"about.subtitle": "Pragmático, enfocado en confiabilidad, buen UX y entrega continua.",
-					"about.p1": "Soy desarrollador full‑stack, graduado en computación en UNICAH. Empecé con sistemas PHP/MySQL en UNAH y BlueLion Soft, desarrollé soluciones .NET MVC para banca regional con SyTCorp, pasé varios años en la pasarela y e‑commerce de GreenPay, y ahora me centro en backend con Node.js, Strapi y AWS en Lynx Labs, además de Flutter para delivery y productos móviles.",
-					"about.p2": "He entregado plataformas de pago, Balanced Scorecard y sistemas de citas para BAC Credomatic, portales de evaluación docente, herramientas de gestión agrícola y de cuencas, flujos tipo ERP y proyectos freelance de largo plazo—priorizando rendimiento, seguridad y mantenibilidad.",
-					"about.legalName": "Nombre legal: Jairo Emilio Bonilla Cálix.",
-					"about.highlightsTitle": "Fortalezas",
-					"about.h1": "APIs REST, cargas serverless, integraciones",
-					"about.h2": "PostgreSQL, MySQL, SQL Server",
-					"about.h3": "AWS Lambda, API Gateway, Kubernetes, CloudWatch",
-					"about.h4": "Flutter, React, Angular (incl. AngularJS)",
-					"about.eduTitle": "Educación",
-					"about.eduBody": "2010–2013 · Universidad Católica de Honduras (UNICAH) — Ingeniero en Ciencias de la Computación.",
-					"about.langTitle": "Idiomas",
-					"about.langBody": "Inglés — diplomado, Universidad Católica de Honduras (UNICAH).",
-					"about.learningLine": "Formación continua en AWS, Flutter, Python, Scrum y stacks web modernos (Udemy y similares).",
-					"projects.title": "Proyectos destacados",
-					"projects.subtitle": "Ejemplos alineados con mi experiencia profesional.",
-					"projects.lxTitle": "Lynx Labs — backend y Strapi",
-					"projects.lxTag": "Backend",
-					"projects.lxDesc": "Desarrollo de backend con Node.js y CMS Strapi en AWS, incluyendo servicios serverless y Kubernetes cuando aplica.",
-					"projects.lxBullet1": "AWS: Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes",
-					"projects.lxBullet2": "Javascript y PostgreSQL junto a APIs de contenido con Strapi",
-					"projects.p1Title": "GreenPay — pasarela y e‑commerce",
-					"projects.p1Tag": "Full‑stack",
-					"projects.p1Desc": "Pasarela de pago y plataforma e‑commerce con panel para transacciones, configuración y visibilidad operativa.",
-					"projects.p1Bullet1": "APIs y modelo de datos para eventos de pago, usuarios e integraciones",
-					"projects.p1Bullet2": "Despliegue serverless en AWS con monitoreo (Lambda, DynamoDB, API Gateway, S3, CloudWatch)",
-					"projects.p2Title": "Balanced Scorecard — BAC Credomatic (Panamá)",
-					"projects.p2Tag": "Enterprise",
-					"projects.p2Desc": "Sistema web Balanced Scorecard para BAC Credomatic Panamá, desarrollado en SyTCorp (Tegucigalpa).",
-					"projects.p2Bullet1": "Implementación full stack con C#, ASP.NET MVC y SQL Server",
-					"projects.p2Bullet2": "Enfoque en reportes confiables y flujos para equipos del banco",
-					"projects.p3Title": "Gestión de fincas — B&W Farming y PNCG",
-					"projects.p3Tag": "Web",
-					"projects.p3Desc": "Sistemas web para programas agrícolas y de cuenca (B&W Farming, Proyecto Nuestra Cuenca Goascorán): inventario, aplicaciones y monitoreo.",
-					"projects.p4Title": "Evaluación docente — UPNFM y UNAH",
-					"projects.p4Tag": "Sector público",
-					"projects.p4Desc": "Plataformas de evaluación de desempeño docente, múltiples sistemas administrativos y tienda Shopish (WordPress) en BlueLion Soft.",
-					"skills.title": "Habilidades",
-					"skills.subtitle": "Agrupadas por cómo entrego productos completos.",
-					"skills.backendTitle": "Backend",
-					"skills.frontendTitle": "Frontend",
-					"skills.mobileTitle": "Móvil",
-					"skills.cloudTitle": "Cloud",
-					"skills.dataTitle": "Datos",
-					"exp.title": "Experiencia",
-					"exp.subtitle": "Línea de tiempo resumida según mi CV.",
-					"exp.e1Company": "Lynx Labs",
-					"exp.e1Role": "Desarrollador Backend",
-					"exp.e1When": "jun 2025 – actualidad",
-					"exp.e1B1": "Backend con Node.js y CMS Strapi.",
-					"exp.e1B2": "AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch, Kubernetes), Javascript, Postgresql.",
-					"exp.e2Company": "GreenPay",
-					"exp.e2Role": "Desarrollador Full Stack",
-					"exp.e2When": "nov 2021 – dic 2025",
-					"exp.e2B1": "Pasarela de pago y plataforma e‑commerce con panel para transacciones y configuración.",
-					"exp.e2B2": "AWS (Lambda, DynamoDB, EC2, API Gateway, S3, CloudWatch), Node.js, React JS, Angular, Angular JS, Javascript, TypeScript, Serverless, Postgresql.",
-					"exp.e3Company": "BlueLion Soft",
-					"exp.e3Role": "Desarrollador Web",
-					"exp.e3When": "2016 – 2021 · Honduras",
-					"exp.e3B1": "Evaluación docente UPNFM y UNAH; Lion Farming; B&W Farming; Shopish; PNCG; múltiples sistemas administrativos.",
-					"exp.e4Company": "SyTCorp",
-					"exp.e4Role": "Desarrollador Full Stack C# ASP.NET MVC",
-					"exp.e4When": "ago 2020 – oct 2020 · Tegucigalpa",
-					"exp.e4B1": "Sistema Balanced Scorecard para BAC Credomatic Panamá.",
-					"exp.e5Company": "SyTCorp",
-					"exp.e5Role": "Consultor",
-					"exp.e5When": "jun 2017 – ene 2018 · Tegucigalpa",
-					"exp.e5B1": "Sistema de programación de citas para BAC Credomatic Panamá.",
-					"exp.e6Company": "UNAH",
-					"exp.e6Role": "Desarrollador Web",
-					"exp.e6When": "sep 2014 – abr 2017 · Tegucigalpa",
-					"exp.e6B1": "Control de documentación, registro de consultores, catálogo de investigadores, congresos y planificación.",
-					"exp.e7Company": "Consultor independiente",
-					"exp.e7Role": "Desarrollador Web",
-					"exp.e7When": "oct 2013 – actualidad · Honduras",
-					"exp.e7B1": "API Node.js para delivery (JWT, perfiles y accesos); laboratorio LBS; SISOCS SOPTRAVI; Aroma Café; Red COMAL.",
-					"exp.e7B2": "Sitios web CYBIMEX, CYBIMEX Cargo y Smart BIZ HN.",
-					"contact.title": "Contacto",
-					"contact.subtitle": "Cuéntame de tu proyecto. Responderé con próximos pasos y una estimación realista.",
-					"contact.locationLine": "Comayagua, Honduras",
-					"contact.emailCta": "Email: jebcalix@gmail.com",
-					"contact.phoneCta": "+504 3327‑2174",
-					"contact.nameLabel": "Nombre",
-					"contact.namePlaceholder": "Tu nombre",
-					"contact.emailLabel": "Email",
-					"contact.emailPlaceholder": "tu@correo.com",
-					"contact.messageLabel": "Mensaje",
-					"contact.messagePlaceholder": "¿Qué estás construyendo y cuál es tu timeline?",
-					"contact.note": "Este formulario abre tu cliente de correo (sin backend).",
-					"contact.submit": "Enviar",
-					"footer.rights": " Jairo Bonilla. Todos los derechos reservados.",
-					"footer.policy": "Política de Publicidad (Smart IPTV)",
-				},
-			};
-
-			function detectDefaultLang() {
-				const saved = localStorage.getItem(STORAGE_KEY);
-				if (saved && SUPPORTED.includes(saved)) return saved;
-				const nav = (navigator.language || "en").toLowerCase();
-				return nav.startsWith("es") ? "es" : "en";
-			}
-
-			function setPressed(lang) {
-				const pairs = [
-					["lang-es", "es"],
-					["lang-en", "en"],
-					["lang-es-mobile", "es"],
-					["lang-en-mobile", "en"],
-				];
-				for (const [id, l] of pairs) {
-					const el = document.getElementById(id);
-					if (!el) continue;
-					const active = l === lang;
-					el.setAttribute("aria-pressed", String(active));
-					el.classList.toggle("bg-white/10", active);
-				}
-			}
-
-			function applyI18n(lang) {
-				const table = dict[lang] || dict.en;
-				document.documentElement.lang = lang;
-				for (const el of document.querySelectorAll("[data-i18n]")) {
-					const key = el.getAttribute("data-i18n");
-					if (!key) continue;
-					const value = table[key];
-					if (typeof value === "string") el.textContent = value;
-				}
-				for (const el of document.querySelectorAll("[data-i18n-placeholder]")) {
-					const key = el.getAttribute("data-i18n-placeholder");
-					if (!key) continue;
-					const value = table[key];
-					if (typeof value === "string") el.setAttribute("placeholder", value);
-				}
-				setPressed(lang);
-			}
-
-			function setLang(lang) {
-				localStorage.setItem(STORAGE_KEY, lang);
-				applyI18n(lang);
-			}
-
-			const mobileBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			function closeMobileMenu() {
-				if (!mobileBtn || !mobileMenu) return;
-				mobileMenu.classList.add("hidden");
-				mobileBtn.setAttribute("aria-expanded", "false");
-				mobileBtn.setAttribute("aria-label", "Open menu");
-			}
-			function toggleMobileMenu() {
-				if (!mobileBtn || !mobileMenu) return;
-				const open = mobileMenu.classList.contains("hidden");
-				mobileMenu.classList.toggle("hidden", !open);
-				mobileBtn.setAttribute("aria-expanded", String(open));
-				mobileBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-			}
-			if (mobileBtn) mobileBtn.addEventListener("click", toggleMobileMenu);
-			if (mobileMenu) {
-				mobileMenu.addEventListener("click", (e) => {
-					const t = e.target;
-					if (t && t.tagName === "A") closeMobileMenu();
-				});
-			}
-
-			const yearEl = document.getElementById("year");
-			if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-			const defaultLang = detectDefaultLang();
-			applyI18n(defaultLang);
-
-			const hooks = [
-				["lang-es", "es"],
-				["lang-en", "en"],
-				["lang-es-mobile", "es"],
-				["lang-en-mobile", "en"],
-			];
-			for (const [id, lang] of hooks) {
-				const el = document.getElementById(id);
-				if (!el) continue;
-				el.addEventListener("click", () => setLang(lang));
-			}
-		})();
-	</script>
+	<script src="./js/i18n.js"></script>
+	<script src="./js/theme.js"></script>
+	<script src="./js/prefs.js"></script>
+	<script src="./js/site.js"></script>
 </body>
 
 </html>

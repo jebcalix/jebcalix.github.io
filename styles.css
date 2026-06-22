@@ -1,16 +1,195 @@
-/* Keep this file minimal: Tailwind drives the design. */
+/* Keep this file minimal: Tailwind drives layout; theme tokens live here. */
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-/* Don’t let anchored sections hide under the sticky header. */
 [id] {
-  scroll-margin-top: 88px;
+	scroll-margin-top: 88px;
+}
+
+:root,
+[data-theme="dark"] {
+	--c-bg: #020617;
+	--c-bg-elevated: rgba(255, 255, 255, 0.05);
+	--c-bg-header: rgba(2, 6, 23, 0.7);
+	--c-text: #f1f5f9;
+	--c-text-muted: #cbd5e1;
+	--c-text-subtle: #94a3b8;
+	--c-border: rgba(255, 255, 255, 0.1);
+	--c-input-bg: rgba(2, 6, 23, 0.4);
+	--c-heading: #ffffff;
+	--c-glow-violet: rgba(139, 92, 246, 0.25);
+	--c-glow-sky: rgba(14, 165, 233, 0.2);
+	--c-selection-bg: rgba(139, 92, 246, 0.3);
+	--c-selection-text: #ffffff;
+	--c-skip-bg: #ffffff;
+	--c-skip-text: #0f172a;
+}
+
+[data-theme="light"] {
+	--c-bg: #f8fafc;
+	--c-bg-elevated: rgba(15, 23, 42, 0.04);
+	--c-bg-header: rgba(248, 250, 252, 0.85);
+	--c-text: #1e293b;
+	--c-text-muted: #475569;
+	--c-text-subtle: #64748b;
+	--c-border: rgba(15, 23, 42, 0.1);
+	--c-input-bg: rgba(255, 255, 255, 0.9);
+	--c-heading: #0f172a;
+	--c-glow-violet: rgba(139, 92, 246, 0.15);
+	--c-glow-sky: rgba(14, 165, 233, 0.12);
+	--c-selection-bg: rgba(139, 92, 246, 0.2);
+	--c-selection-text: #0f172a;
+	--c-skip-bg: #0f172a;
+	--c-skip-text: #f8fafc;
+}
+
+.site-shell {
+	background-color: var(--c-bg);
+	color: var(--c-text);
+}
+
+.site-shell ::selection {
+	background: var(--c-selection-bg);
+	color: var(--c-selection-text);
+}
+
+.site-header {
+	border-color: var(--c-border);
+	background-color: var(--c-bg-header);
+}
+
+.site-card,
+.site-input,
+.site-pill-wrap {
+	border-color: var(--c-border);
+	background-color: var(--c-bg-elevated);
+}
+
+.site-heading {
+	color: var(--c-heading);
+}
+
+.site-muted {
+	color: var(--c-text-muted);
+}
+
+.site-subtle {
+	color: var(--c-text-subtle);
+}
+
+.site-input {
+	background-color: var(--c-input-bg);
+	color: var(--c-heading);
+}
+
+.site-glow-violet {
+	background-color: var(--c-glow-violet);
+}
+
+.site-glow-sky {
+	background-color: var(--c-glow-sky);
+}
+
+.site-nav-link:hover,
+.site-icon-btn:hover,
+.prefs-option:hover,
+.lang-active,
+.theme-active {
+	background-color: var(--c-bg-elevated);
+}
+
+.prefs-panel {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 0.5rem);
+	z-index: 60;
+	min-width: 11rem;
+	border: 1px solid var(--c-border);
+	border-radius: 0.75rem;
+	background-color: var(--c-bg);
+	padding: 0.5rem;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.prefs-label {
+	margin: 0.25rem 0.5rem 0.35rem;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--c-text-subtle);
+}
+
+.prefs-divider {
+	margin: 0.35rem 0;
+	border: 0;
+	border-top: 1px solid var(--c-border);
+}
+
+.prefs-option {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.65rem;
+	font-size: 0.875rem;
+	text-align: left;
+	color: var(--c-text-muted);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.prefs-option.theme-active,
+.prefs-option.lang-active {
+	color: var(--c-heading);
+	font-weight: 600;
+}
+
+.prefs-option:focus-visible {
+	outline: 2px solid rgba(139, 92, 246, 0.6);
+	outline-offset: 1px;
+}
+
+.site-skip:focus {
+	background: var(--c-skip-bg);
+	color: var(--c-skip-text);
+}
+
+.exp-number {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 9999px;
+	border: 1px solid var(--c-border);
+	background-color: var(--c-bg-elevated);
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: var(--c-heading);
+	flex-shrink: 0;
+}
+
+.app-card-img {
+	aspect-ratio: 1;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 1rem;
+	object-fit: cover;
+	object-position: center;
+	background-color: #0a0c0e;
+	border: 1px solid var(--c-border);
+}
+
+[data-theme="light"] img[src*="github.svg"] {
+	filter: invert(1);
 }

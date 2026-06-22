@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="GlowPulse">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2d95"/>
+      <stop offset="50%" stop-color="#b24bff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect x="24" y="24" width="24" height="24" rx="4" fill="url(#neon)" opacity="0.9"/>
+  <rect x="52" y="24" width="24" height="24" rx="4" fill="url(#neon)" opacity="0.75"/>
+  <rect x="80" y="24" width="24" height="24" rx="4" fill="url(#neon)" opacity="0.6"/>
+  <rect x="38" y="52" width="24" height="24" rx="4" fill="url(#neon)" opacity="0.85"/>
+  <rect x="66" y="52" width="24" height="24" rx="4" fill="url(#neon)" opacity="0.7"/>
+  <rect x="52" y="80" width="24" height="24" rx="4" fill="url(#neon)"/>
+</svg>
