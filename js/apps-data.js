@@ -154,6 +154,37 @@ window.JB_APPS = {
 			],
 		},
 	},
+	konti: {
+		slug: "konti",
+		packageId: "com.jebstudios.konti",
+		icon: "../images/apps/konti.svg",
+		privacy: "../konti-privacy-policy.html",
+		tags: ["Flutter", "Dart", "Supabase"],
+		en: {
+			title: "Konti",
+			tagline: "Business management for micro-entrepreneurs",
+			desc: "A cloud-connected business tool for small entrepreneurs in Latin America. Track cash flow, manage inventory, follow up on debts, invite your team, and export monthly reports — all from your phone.",
+			features: [
+				"Multi-business support with income and expense tracking",
+				"Inventory with stock alerts and optional product photos",
+				"Debt tracking for money to collect or to pay",
+				"Team management — invite employees by email",
+				"Monthly cash-flow reports with CSV export",
+			],
+		},
+		es: {
+			title: "Konti",
+			tagline: "Gestión empresarial para microemprendedores",
+			desc: "Herramienta empresarial en la nube para pequeños emprendedores en Latinoamérica. Controla flujo de caja, inventario, deudas, invita a tu equipo y exporta reportes mensuales desde tu teléfono.",
+			features: [
+				"Soporte multi-negocio con registro de ingresos y gastos",
+				"Inventario con alertas de stock y fotos de producto opcionales",
+				"Seguimiento de deudas por cobrar o por pagar",
+				"Gestión de equipo — invita empleados por correo",
+				"Reportes mensuales de flujo de caja con exportación CSV",
+			],
+		},
+	},
 	glowpulse: {
 		slug: "glowpulse",
 		packageId: "com.jebstudios.glowpulse",
