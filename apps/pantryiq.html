@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-theme-mode="system" data-app="pantryiq">
+
+<head>
+	<title>App — JEB Studios</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+	<link rel="icon" href="../favicon.ico" sizes="any" />
+	<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+	<div class="site-shell min-h-screen">
+		<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+			<div class="site-glow-violet absolute -top-40 left-[-20rem] h-[34rem] w-[34rem] rounded-full blur-3xl"></div>
+			<div class="site-glow-sky absolute top-[-12rem] right-[-18rem] h-[30rem] w-[30rem] rounded-full blur-3xl"></div>
+		</div>
+
+		<header class="site-header sticky top-0 z-50 border-b backdrop-blur">
+			<div class="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3 md:px-6">
+				<a href="../index.html#apps" class="text-sm font-semibold text-violet-400 hover:text-violet-300" data-i18n="app.back">← Back to portfolio</a>
+				<div class="relative">
+					<button id="prefsBtn" type="button"
+						class="site-icon-btn site-card inline-flex items-center justify-center rounded-xl border p-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+						aria-haspopup="true" aria-expanded="false" aria-controls="prefsMenu"
+						data-i18n-aria-label="prefs.label">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-5 w-5" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+						</svg>
+					</button>
+					<div id="prefsMenu" class="prefs-panel hidden" role="menu">
+						<p class="prefs-label" data-i18n="prefs.chooseTheme">Choose theme</p>
+						<button id="theme-light" type="button" role="menuitemradio" class="prefs-option site-muted" data-i18n="theme.light">Light</button>
+						<button id="theme-dark" type="button" role="menuitemradio" class="prefs-option site-muted" data-i18n="theme.dark">Dark</button>
+						<button id="theme-system" type="button" role="menuitemradio" class="prefs-option site-muted theme-active" data-i18n="theme.system">System</button>
+						<hr class="prefs-divider" />
+						<p class="prefs-label" data-i18n="prefs.chooseLang">Choose language</p>
+						<button id="lang-en" type="button" role="menuitemradio" class="prefs-option site-muted lang-active" aria-pressed="true" data-i18n="prefs.langEn">English</button>
+						<button id="lang-es" type="button" role="menuitemradio" class="prefs-option site-muted" aria-pressed="false" data-i18n="prefs.langEs">Español</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="mx-auto max-w-3xl px-4 py-10 md:px-6 md:py-14">
+			<div class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left sm:gap-6">
+				<img id="app-icon" src="" alt="" class="h-28 w-28 rounded-3xl border object-cover shadow-lg" width="112" height="112" style="border-color: var(--c-border)" />
+				<div class="mt-6 sm:mt-0">
+					<p class="text-sm font-medium text-violet-400" data-i18n="app.developedBy">Developed by JEB Studios</p>
+					<h1 id="app-title" class="mt-1 text-3xl font-semibold tracking-tight site-heading"></h1>
+					<p id="app-tagline" class="mt-2 text-lg site-muted"></p>
+				</div>
+			</div>
+
+			<p id="app-desc" class="mt-8 text-base leading-relaxed site-muted"></p>
+
+			<section class="mt-10">
+				<h2 class="text-lg font-semibold site-heading" data-i18n="app.features">Features</h2>
+				<ul id="app-features" class="mt-4 space-y-3 text-sm site-muted"></ul>
+			</section>
+
+			<section class="mt-10">
+				<h2 class="text-lg font-semibold site-heading" data-i18n="app.tech">Technologies</h2>
+				<div id="app-tags" class="mt-4 flex flex-wrap gap-2"></div>
+			</section>
+
+			<div class="mt-10 flex flex-wrap gap-3">
+				<a id="app-play" href="#" target="_blank" rel="noopener noreferrer"
+					class="inline-flex items-center justify-center rounded-xl bg-violet-500 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+					data-i18n="app.playCta">Get on Google Play</a>
+				<a id="app-privacy" href="#" target="_blank" rel="noopener noreferrer"
+					class="site-card site-heading inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-violet-400/60"
+					data-i18n="app.privacyCta">Privacy policy</a>
+			</div>
+		</main>
+
+		<footer class="site-header border-t py-8">
+			<div class="mx-auto max-w-3xl px-4 text-center text-sm site-subtle md:px-6">
+				<p>
+					<span>&copy;</span>
+					<span id="year">2026</span>
+					<span data-i18n="footer.rights"> Jairo Bonilla. All rights reserved.</span>
+				</p>
+				<p class="mt-2">
+					<a href="../index.html" class="text-violet-400 hover:text-violet-300" data-i18n="footer.home">Portfolio</a>
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="../js/i18n.js"></script>
+	<script src="../js/apps-data.js"></script>
+	<script src="../js/theme.js"></script>
+	<script src="../js/prefs.js"></script>
+	<script src="../js/site.js"></script>
+	<script src="../js/app-page.js"></script>
+</body>
+
+</html>

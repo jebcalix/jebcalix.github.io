@@ -61,6 +61,8 @@ window.JB_I18N = {
       "apps.card.gridout": "Offline parking puzzle — free the red car.",
       "apps.card.konti":
         "Cloud business management for micro-entrepreneurs in Latin America.",
+      "apps.card.pantryiq":
+        "Smart household pantry with inventory, lists, recipes, and AI.",
       "app.back": "← Back to portfolio",
       "app.features": "Features",
       "app.tech": "Technologies",
@@ -235,6 +237,8 @@ window.JB_I18N = {
       "apps.card.gridout": "Puzzle de parking offline: libera el auto rojo.",
       "apps.card.konti":
         "Gestión empresarial en la nube para microemprendedores en Latinoamérica.",
+      "apps.card.pantryiq":
+        "Despensa inteligente: inventario, listas, recetas e IA.",
       "app.back": "← Volver al portafolio",
       "app.features": "Características",
       "app.tech": "Tecnologías",

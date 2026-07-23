@@ -247,4 +247,35 @@ window.JB_APPS = {
 			],
 		},
 	},
+	pantryiq: {
+		slug: "pantryiq",
+		packageId: "com.jebstudios.pantryiq",
+		icon: "../images/apps/pantryiq.png",
+		privacy: "../pantryiq-privacy-policy.html",
+		tags: ["Flutter", "Dart", "Supabase"],
+		en: {
+			title: "PantryIQ",
+			tagline: "Smart pantry for your household",
+			desc: "A cloud-connected pantry manager for families. Track inventory by batches (FIFO), get expiration and low-stock alerts, build shopping lists, cook from recipes, and optionally use AI — all synced across household members.",
+			features: [
+				"Batch inventory with FIFO and optional expiration dates",
+				"Shared households with invitation codes",
+				"Shopping lists and recipes that deduct stock when you cook",
+				"Optional AI recipe and shopping-list suggestions",
+				"Push alerts and subscription plans via Google Play",
+			],
+		},
+		es: {
+			title: "PantryIQ",
+			tagline: "Despensa inteligente para tu hogar",
+			desc: "Gestor de despensa en la nube para familias. Controla inventario por lotes (FIFO), recibe alertas de caducidad y stock bajo, arma listas de compras, cocina con recetas y, si quieres, usa IA — todo sincronizado entre miembros del hogar.",
+			features: [
+				"Inventario por lotes con FIFO y fechas de vencimiento opcionales",
+				"Hogares compartidos con código de invitación",
+				"Listas de compras y recetas que descuentan stock al cocinar",
+				"Sugerencias opcionales de recetas y listas con IA",
+				"Alertas push y planes de suscripción vía Google Play",
+			],
+		},
+	},
 };
